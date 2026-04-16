@@ -1,0 +1,139 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 25,
+      "adx_min": 0
+    },
+    "model_type": "RandomForest",
+    "accuracy": 1.0,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_BTCUSDT.pkl"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "strategy": "Bollinger",
+    "params": {
+      "period": 20
+    },
+    "model_type": "RandomForest",
+    "accuracy": 1.0,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_ETHUSDT.pkl"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 25,
+      "adx_min": 0
+    },
+    "model_type": "RandomForest",
+    "accuracy": 0.9947643979057592,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_SOLUSDT.pkl"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 25,
+      "adx_min": 0
+    },
+    "model_type": "RandomForest",
+    "accuracy": 1.0,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_XRPUSDT.pkl"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 30,
+      "adx_min": 0
+    },
+    "model_type": "RandomForest",
+    "accuracy": 1.0,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_BNBUSDT.pkl"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 35,
+      "adx_min": 0
+    },
+    "model_type": "RandomForest",
+    "accuracy": 0.9790575916230366,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_DOGEUSDT.pkl"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "strategy": "Bollinger",
+    "params": {
+      "period": 20
+    },
+    "model_type": "RandomForest",
+    "accuracy": 0.9895287958115183,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_ADAUSDT.pkl"
+  },
+  {
+    "symbol": "TRXUSDT",
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 30,
+      "adx_min": 0
+    },
+    "model_type": "RandomForest",
+    "accuracy": 1.0,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_TRXUSDT.pkl"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 30,
+      "adx_min": 0
+    },
+    "model_type": "RandomForest",
+    "accuracy": 0.9895287958115183,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_AVAXUSDT.pkl"
+  },
+  {
+    "symbol": "DOTUSDT",
+    "strategy": "Bollinger",
+    "params": {
+      "period": 20
+    },
+    "model_type": "RandomForest",
+    "accuracy": 0.9895287958115183,
+    "train_samples": 760,
+    "test_samples": 191,
+    "features": 420,
+    "model_path": "D:\\Futures\\backend\\pair_models_v2\\model_DOTUSDT.pkl"
+  }
+]

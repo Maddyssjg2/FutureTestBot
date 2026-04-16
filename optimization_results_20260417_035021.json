@@ -1,0 +1,6272 @@
+{
+  "BTCUSDT": {
+    "all_results": [
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 3677.13,
+        "pnl_pct": 36.77,
+        "final_balance": 13677.13,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 3677.13,
+        "pnl_pct": 36.77,
+        "final_balance": 13677.13,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 3825.17,
+        "pnl_pct": 38.25,
+        "final_balance": 13825.17,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 640.16,
+        "pnl_pct": 6.4,
+        "final_balance": 10640.16,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 3825.17,
+        "pnl_pct": 38.25,
+        "final_balance": 13825.17,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 640.16,
+        "pnl_pct": 6.4,
+        "final_balance": 10640.16,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 3825.17,
+        "pnl_pct": 38.25,
+        "final_balance": 13825.17,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 640.16,
+        "pnl_pct": 6.4,
+        "final_balance": 10640.16,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 14,
+        "losses": 6,
+        "win_rate": 70.0,
+        "total_pnl": -1466.11,
+        "pnl_pct": -14.66,
+        "final_balance": 8533.89,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 14,
+        "losses": 6,
+        "win_rate": 70.0,
+        "total_pnl": -1466.11,
+        "pnl_pct": -14.66,
+        "final_balance": 8533.89,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 14,
+        "losses": 6,
+        "win_rate": 70.0,
+        "total_pnl": -1466.11,
+        "pnl_pct": -14.66,
+        "final_balance": 8533.89,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 11,
+        "losses": 5,
+        "win_rate": 68.8,
+        "total_pnl": 3514.23,
+        "pnl_pct": 35.14,
+        "final_balance": 13514.23,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 11,
+        "losses": 5,
+        "win_rate": 68.8,
+        "total_pnl": 3514.23,
+        "pnl_pct": 35.14,
+        "final_balance": 13514.23,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 11,
+        "losses": 5,
+        "win_rate": 68.8,
+        "total_pnl": 3514.23,
+        "pnl_pct": 35.14,
+        "final_balance": 13514.23,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -616.9,
+        "pnl_pct": -6.17,
+        "final_balance": 9383.1,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -616.9,
+        "pnl_pct": -6.17,
+        "final_balance": 9383.1,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -616.9,
+        "pnl_pct": -6.17,
+        "final_balance": 9383.1,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 19,
+        "losses": 9,
+        "win_rate": 67.9,
+        "total_pnl": 4807.99,
+        "pnl_pct": 48.08,
+        "final_balance": 14807.99,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 19,
+        "losses": 9,
+        "win_rate": 67.9,
+        "total_pnl": 4807.99,
+        "pnl_pct": 48.08,
+        "final_balance": 14807.99,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 19,
+        "losses": 9,
+        "win_rate": 67.9,
+        "total_pnl": 4807.99,
+        "pnl_pct": 48.08,
+        "final_balance": 14807.99,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 16,
+        "losses": 8,
+        "win_rate": 66.7,
+        "total_pnl": -903.61,
+        "pnl_pct": -9.04,
+        "final_balance": 9096.39,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 16,
+        "losses": 8,
+        "win_rate": 66.7,
+        "total_pnl": -903.61,
+        "pnl_pct": -9.04,
+        "final_balance": 9096.39,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 16,
+        "losses": 8,
+        "win_rate": 66.7,
+        "total_pnl": -903.61,
+        "pnl_pct": -9.04,
+        "final_balance": 9096.39,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 11,
+        "wins": 7,
+        "losses": 4,
+        "win_rate": 63.6,
+        "total_pnl": 1599.77,
+        "pnl_pct": 16.0,
+        "final_balance": 11599.77,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 30,
+        "wins": 19,
+        "losses": 11,
+        "win_rate": 63.3,
+        "total_pnl": 1439.03,
+        "pnl_pct": 14.39,
+        "final_balance": 11439.03,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 30,
+        "wins": 19,
+        "losses": 11,
+        "win_rate": 63.3,
+        "total_pnl": 1439.03,
+        "pnl_pct": 14.39,
+        "final_balance": 11439.03,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 30,
+        "wins": 19,
+        "losses": 11,
+        "win_rate": 63.3,
+        "total_pnl": 1439.03,
+        "pnl_pct": 14.39,
+        "final_balance": 11439.03,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 58,
+        "wins": 35,
+        "losses": 23,
+        "win_rate": 60.3,
+        "total_pnl": 1894.78,
+        "pnl_pct": 18.95,
+        "final_balance": 11894.78,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 3,
+        "losses": 2,
+        "win_rate": 60.0,
+        "total_pnl": -1115.78,
+        "pnl_pct": -11.16,
+        "final_balance": 8884.22,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 57,
+        "wins": 34,
+        "losses": 23,
+        "win_rate": 59.6,
+        "total_pnl": 680.09,
+        "pnl_pct": 6.8,
+        "final_balance": 10680.09,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 22,
+        "losses": 15,
+        "win_rate": 59.5,
+        "total_pnl": -2649.86,
+        "pnl_pct": -26.5,
+        "final_balance": 7350.14,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 22,
+        "losses": 15,
+        "win_rate": 59.5,
+        "total_pnl": -2649.86,
+        "pnl_pct": -26.5,
+        "final_balance": 7350.14,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 22,
+        "losses": 15,
+        "win_rate": 59.5,
+        "total_pnl": -2649.86,
+        "pnl_pct": -26.5,
+        "final_balance": 7350.14,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 55,
+        "wins": 32,
+        "losses": 23,
+        "win_rate": 58.2,
+        "total_pnl": -1682.83,
+        "pnl_pct": -16.83,
+        "final_balance": 8317.17,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 24,
+        "wins": 13,
+        "losses": 11,
+        "win_rate": 54.2,
+        "total_pnl": -2133.13,
+        "pnl_pct": -21.33,
+        "final_balance": 7866.87,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 24,
+        "wins": 13,
+        "losses": 11,
+        "win_rate": 54.2,
+        "total_pnl": -2133.13,
+        "pnl_pct": -21.33,
+        "final_balance": 7866.87,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 24,
+        "wins": 13,
+        "losses": 11,
+        "win_rate": 54.2,
+        "total_pnl": -2133.13,
+        "pnl_pct": -21.33,
+        "final_balance": 7866.87,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 15,
+        "wins": 8,
+        "losses": 7,
+        "win_rate": 53.3,
+        "total_pnl": -1322.34,
+        "pnl_pct": -13.22,
+        "final_balance": 8677.66,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 15,
+        "wins": 8,
+        "losses": 7,
+        "win_rate": 53.3,
+        "total_pnl": -1322.34,
+        "pnl_pct": -13.22,
+        "final_balance": 8677.66,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 15,
+        "wins": 8,
+        "losses": 7,
+        "win_rate": 53.3,
+        "total_pnl": -1322.34,
+        "pnl_pct": -13.22,
+        "final_balance": 8677.66,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 12,
+        "wins": 6,
+        "losses": 6,
+        "win_rate": 50.0,
+        "total_pnl": -2098.69,
+        "pnl_pct": -20.99,
+        "final_balance": 7901.31,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 12,
+        "wins": 6,
+        "losses": 6,
+        "win_rate": 50.0,
+        "total_pnl": -2098.69,
+        "pnl_pct": -20.99,
+        "final_balance": 7901.31,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 12,
+        "wins": 6,
+        "losses": 6,
+        "win_rate": 50.0,
+        "total_pnl": -2098.69,
+        "pnl_pct": -20.99,
+        "final_balance": 7901.31,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 340.27,
+        "pnl_pct": 3.4,
+        "final_balance": 10340.27,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 4,
+        "wins": 2,
+        "losses": 2,
+        "win_rate": 50.0,
+        "total_pnl": -1616.84,
+        "pnl_pct": -16.17,
+        "final_balance": 8383.16,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 6,
+        "wins": 3,
+        "losses": 3,
+        "win_rate": 50.0,
+        "total_pnl": 1535.61,
+        "pnl_pct": 15.36,
+        "final_balance": 11535.61,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 50,
+        "wins": 23,
+        "losses": 27,
+        "win_rate": 46.0,
+        "total_pnl": 11388.76,
+        "pnl_pct": 113.89,
+        "final_balance": 21388.76,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 27,
+        "wins": 10,
+        "losses": 17,
+        "win_rate": 37.0,
+        "total_pnl": 3339.96,
+        "pnl_pct": 33.4,
+        "final_balance": 13339.96,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 14,
+        "wins": 4,
+        "losses": 10,
+        "win_rate": 28.6,
+        "total_pnl": -1236.46,
+        "pnl_pct": -12.36,
+        "final_balance": 8763.54,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "total_pnl": -2159.54,
+        "pnl_pct": -21.6,
+        "final_balance": 7840.46,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 3677.13,
+        "pnl_pct": 36.77,
+        "final_balance": 13677.13,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 3677.13,
+        "pnl_pct": 36.77,
+        "final_balance": 13677.13,
+        "params": "lbp30"
+      }
+    ],
+    "best_result": {
+      "strategy": "Breakout_PW",
+      "trades": 2,
+      "wins": 2,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_pnl": 3677.13,
+      "pnl_pct": 36.77,
+      "final_balance": 13677.13,
+      "params": "lbp20"
+    }
+  },
+  "ETHUSDT": {
+    "all_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 5,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 247.04,
+        "pnl_pct": 2.47,
+        "final_balance": 10247.04,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 6,
+        "wins": 5,
+        "losses": 1,
+        "win_rate": 83.3,
+        "total_pnl": 208.55,
+        "pnl_pct": 2.09,
+        "final_balance": 10208.55,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 9,
+        "losses": 3,
+        "win_rate": 75.0,
+        "total_pnl": 272.1,
+        "pnl_pct": 2.72,
+        "final_balance": 10272.1,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 9,
+        "losses": 3,
+        "win_rate": 75.0,
+        "total_pnl": 272.1,
+        "pnl_pct": 2.72,
+        "final_balance": 10272.1,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 9,
+        "losses": 3,
+        "win_rate": 75.0,
+        "total_pnl": 272.1,
+        "pnl_pct": 2.72,
+        "final_balance": 10272.1,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 4,
+        "wins": 3,
+        "losses": 1,
+        "win_rate": 75.0,
+        "total_pnl": 83.86,
+        "pnl_pct": 0.84,
+        "final_balance": 10083.86,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 24,
+        "losses": 9,
+        "win_rate": 72.7,
+        "total_pnl": 655.03,
+        "pnl_pct": 6.55,
+        "final_balance": 10655.03,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 24,
+        "losses": 9,
+        "win_rate": 72.7,
+        "total_pnl": 655.03,
+        "pnl_pct": 6.55,
+        "final_balance": 10655.03,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 24,
+        "losses": 9,
+        "win_rate": 72.7,
+        "total_pnl": 655.03,
+        "pnl_pct": 6.55,
+        "final_balance": 10655.03,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 266.81,
+        "pnl_pct": 2.67,
+        "final_balance": 10266.81,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 266.81,
+        "pnl_pct": 2.67,
+        "final_balance": 10266.81,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": 266.81,
+        "pnl_pct": 2.67,
+        "final_balance": 10266.81,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 18,
+        "losses": 8,
+        "win_rate": 69.2,
+        "total_pnl": 393.35,
+        "pnl_pct": 3.93,
+        "final_balance": 10393.35,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 18,
+        "losses": 8,
+        "win_rate": 69.2,
+        "total_pnl": 393.35,
+        "pnl_pct": 3.93,
+        "final_balance": 10393.35,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 18,
+        "losses": 8,
+        "win_rate": 69.2,
+        "total_pnl": 393.35,
+        "pnl_pct": 3.93,
+        "final_balance": 10393.35,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 42,
+        "wins": 29,
+        "losses": 13,
+        "win_rate": 69.0,
+        "total_pnl": 498.48,
+        "pnl_pct": 4.98,
+        "final_balance": 10498.48,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 42,
+        "wins": 29,
+        "losses": 13,
+        "win_rate": 69.0,
+        "total_pnl": 498.48,
+        "pnl_pct": 4.98,
+        "final_balance": 10498.48,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 42,
+        "wins": 29,
+        "losses": 13,
+        "win_rate": 69.0,
+        "total_pnl": 498.48,
+        "pnl_pct": 4.98,
+        "final_balance": 10498.48,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 21,
+        "losses": 12,
+        "win_rate": 63.6,
+        "total_pnl": 221.2,
+        "pnl_pct": 2.21,
+        "final_balance": 10221.2,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 21,
+        "losses": 12,
+        "win_rate": 63.6,
+        "total_pnl": 221.2,
+        "pnl_pct": 2.21,
+        "final_balance": 10221.2,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 21,
+        "losses": 12,
+        "win_rate": 63.6,
+        "total_pnl": 221.2,
+        "pnl_pct": 2.21,
+        "final_balance": 10221.2,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 8,
+        "wins": 5,
+        "losses": 3,
+        "win_rate": 62.5,
+        "total_pnl": 55.74,
+        "pnl_pct": 0.56,
+        "final_balance": 10055.74,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 49,
+        "wins": 30,
+        "losses": 19,
+        "win_rate": 61.2,
+        "total_pnl": 211.37,
+        "pnl_pct": 2.11,
+        "final_balance": 10211.37,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 49,
+        "wins": 30,
+        "losses": 19,
+        "win_rate": 61.2,
+        "total_pnl": 211.37,
+        "pnl_pct": 2.11,
+        "final_balance": 10211.37,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 49,
+        "wins": 30,
+        "losses": 19,
+        "win_rate": 61.2,
+        "total_pnl": 211.37,
+        "pnl_pct": 2.11,
+        "final_balance": 10211.37,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 92,
+        "wins": 56,
+        "losses": 36,
+        "win_rate": 60.9,
+        "total_pnl": 471.24,
+        "pnl_pct": 4.71,
+        "final_balance": 10471.24,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 92,
+        "wins": 56,
+        "losses": 36,
+        "win_rate": 60.9,
+        "total_pnl": 486.94,
+        "pnl_pct": 4.87,
+        "final_balance": 10486.94,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 90,
+        "wins": 54,
+        "losses": 36,
+        "win_rate": 60.0,
+        "total_pnl": 363.79,
+        "pnl_pct": 3.64,
+        "final_balance": 10363.79,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": 31.24,
+        "pnl_pct": 0.31,
+        "final_balance": 10031.24,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": 31.24,
+        "pnl_pct": 0.31,
+        "final_balance": 10031.24,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": 31.24,
+        "pnl_pct": 0.31,
+        "final_balance": 10031.24,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 9,
+        "wins": 5,
+        "losses": 4,
+        "win_rate": 55.6,
+        "total_pnl": 12.9,
+        "pnl_pct": 0.13,
+        "final_balance": 10012.9,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 35,
+        "wins": 19,
+        "losses": 16,
+        "win_rate": 54.3,
+        "total_pnl": -92.33,
+        "pnl_pct": -0.92,
+        "final_balance": 9907.67,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 35,
+        "wins": 19,
+        "losses": 16,
+        "win_rate": 54.3,
+        "total_pnl": -92.33,
+        "pnl_pct": -0.92,
+        "final_balance": 9907.67,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 35,
+        "wins": 19,
+        "losses": 16,
+        "win_rate": 54.3,
+        "total_pnl": -92.33,
+        "pnl_pct": -0.92,
+        "final_balance": 9907.67,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 59,
+        "wins": 32,
+        "losses": 27,
+        "win_rate": 54.2,
+        "total_pnl": 1153.4,
+        "pnl_pct": 11.53,
+        "final_balance": 11153.4,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 6,
+        "wins": 3,
+        "losses": 3,
+        "win_rate": 50.0,
+        "total_pnl": -39.42,
+        "pnl_pct": -0.39,
+        "final_balance": 9960.58,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 18,
+        "wins": 9,
+        "losses": 9,
+        "win_rate": 50.0,
+        "total_pnl": -123.37,
+        "pnl_pct": -1.23,
+        "final_balance": 9876.63,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 15,
+        "wins": 7,
+        "losses": 8,
+        "win_rate": 46.7,
+        "total_pnl": -145.53,
+        "pnl_pct": -1.46,
+        "final_balance": 9854.47,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 22,
+        "wins": 10,
+        "losses": 12,
+        "win_rate": 45.5,
+        "total_pnl": -241.36,
+        "pnl_pct": -2.41,
+        "final_balance": 9758.64,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 18,
+        "wins": 8,
+        "losses": 10,
+        "win_rate": 44.4,
+        "total_pnl": -220.94,
+        "pnl_pct": -2.21,
+        "final_balance": 9779.06,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 17,
+        "wins": 7,
+        "losses": 10,
+        "win_rate": 41.2,
+        "total_pnl": 440.64,
+        "pnl_pct": 4.41,
+        "final_balance": 10440.64,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 35,
+        "wins": 14,
+        "losses": 21,
+        "win_rate": 40.0,
+        "total_pnl": 586.01,
+        "pnl_pct": 5.86,
+        "final_balance": 10586.01,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 5,
+        "wins": 2,
+        "losses": 3,
+        "win_rate": 40.0,
+        "total_pnl": 93.64,
+        "pnl_pct": 0.94,
+        "final_balance": 10093.64,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 13,
+        "wins": 5,
+        "losses": 8,
+        "win_rate": 38.5,
+        "total_pnl": -242.99,
+        "pnl_pct": -2.43,
+        "final_balance": 9757.01,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 12,
+        "wins": 4,
+        "losses": 8,
+        "win_rate": 33.3,
+        "total_pnl": -274.81,
+        "pnl_pct": -2.75,
+        "final_balance": 9725.19,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 9,
+        "wins": 3,
+        "losses": 6,
+        "win_rate": 33.3,
+        "total_pnl": -14.13,
+        "pnl_pct": -0.14,
+        "final_balance": 9985.87,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 1,
+        "losses": 2,
+        "win_rate": 33.3,
+        "total_pnl": 21.88,
+        "pnl_pct": 0.22,
+        "final_balance": 10021.88,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "total_pnl": -74.94,
+        "pnl_pct": -0.75,
+        "final_balance": 9925.06,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "total_pnl": -62.71,
+        "pnl_pct": -0.63,
+        "final_balance": 9937.29,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 5,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 247.04,
+        "pnl_pct": 2.47,
+        "final_balance": 10247.04,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 6,
+        "wins": 5,
+        "losses": 1,
+        "win_rate": 83.3,
+        "total_pnl": 208.55,
+        "pnl_pct": 2.09,
+        "final_balance": 10208.55,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 9,
+        "losses": 3,
+        "win_rate": 75.0,
+        "total_pnl": 272.1,
+        "pnl_pct": 2.72,
+        "final_balance": 10272.1,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 9,
+        "losses": 3,
+        "win_rate": 75.0,
+        "total_pnl": 272.1,
+        "pnl_pct": 2.72,
+        "final_balance": 10272.1,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 9,
+        "losses": 3,
+        "win_rate": 75.0,
+        "total_pnl": 272.1,
+        "pnl_pct": 2.72,
+        "final_balance": 10272.1,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 4,
+        "wins": 3,
+        "losses": 1,
+        "win_rate": 75.0,
+        "total_pnl": 83.86,
+        "pnl_pct": 0.84,
+        "final_balance": 10083.86,
+        "params": "stoch_ov20"
+      }
+    ],
+    "best_result": {
+      "strategy": "Stochastic",
+      "trades": 5,
+      "wins": 5,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_pnl": 247.04,
+      "pnl_pct": 2.47,
+      "final_balance": 10247.04,
+      "params": "stoch_ov15"
+    }
+  },
+  "SOLUSDT": {
+    "all_results": [
+      {
+        "strategy": "Breakout_PW",
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 7.72,
+        "pnl_pct": 0.08,
+        "final_balance": 10007.72,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 14,
+        "losses": 1,
+        "win_rate": 93.3,
+        "total_pnl": 26.83,
+        "pnl_pct": 0.27,
+        "final_balance": 10026.83,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 14,
+        "losses": 1,
+        "win_rate": 93.3,
+        "total_pnl": 26.83,
+        "pnl_pct": 0.27,
+        "final_balance": 10026.83,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 14,
+        "losses": 1,
+        "win_rate": 93.3,
+        "total_pnl": 26.83,
+        "pnl_pct": 0.27,
+        "final_balance": 10026.83,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 19,
+        "losses": 2,
+        "win_rate": 90.5,
+        "total_pnl": 32.83,
+        "pnl_pct": 0.33,
+        "final_balance": 10032.83,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 19,
+        "losses": 2,
+        "win_rate": 90.5,
+        "total_pnl": 32.83,
+        "pnl_pct": 0.33,
+        "final_balance": 10032.83,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 19,
+        "losses": 2,
+        "win_rate": 90.5,
+        "total_pnl": 32.83,
+        "pnl_pct": 0.33,
+        "final_balance": 10032.83,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 18,
+        "losses": 2,
+        "win_rate": 90.0,
+        "total_pnl": 33.17,
+        "pnl_pct": 0.33,
+        "final_balance": 10033.17,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 18,
+        "losses": 2,
+        "win_rate": 90.0,
+        "total_pnl": 33.17,
+        "pnl_pct": 0.33,
+        "final_balance": 10033.17,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 18,
+        "losses": 2,
+        "win_rate": 90.0,
+        "total_pnl": 33.17,
+        "pnl_pct": 0.33,
+        "final_balance": 10033.17,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 8,
+        "wins": 6,
+        "losses": 2,
+        "win_rate": 75.0,
+        "total_pnl": 7.32,
+        "pnl_pct": 0.07,
+        "final_balance": 10007.32,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 8,
+        "wins": 6,
+        "losses": 2,
+        "win_rate": 75.0,
+        "total_pnl": 11.24,
+        "pnl_pct": 0.11,
+        "final_balance": 10011.24,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 43,
+        "wins": 30,
+        "losses": 13,
+        "win_rate": 69.8,
+        "total_pnl": 13.53,
+        "pnl_pct": 0.14,
+        "final_balance": 10013.53,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 43,
+        "wins": 30,
+        "losses": 13,
+        "win_rate": 69.8,
+        "total_pnl": 13.53,
+        "pnl_pct": 0.14,
+        "final_balance": 10013.53,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 43,
+        "wins": 30,
+        "losses": 13,
+        "win_rate": 69.8,
+        "total_pnl": 13.53,
+        "pnl_pct": 0.14,
+        "final_balance": 10013.53,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 22,
+        "losses": 10,
+        "win_rate": 68.8,
+        "total_pnl": 10.17,
+        "pnl_pct": 0.1,
+        "final_balance": 10010.17,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 22,
+        "losses": 10,
+        "win_rate": 68.8,
+        "total_pnl": 10.17,
+        "pnl_pct": 0.1,
+        "final_balance": 10010.17,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 22,
+        "losses": 10,
+        "win_rate": 68.8,
+        "total_pnl": 10.17,
+        "pnl_pct": 0.1,
+        "final_balance": 10010.17,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -3.61,
+        "pnl_pct": -0.04,
+        "final_balance": 9996.39,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -3.61,
+        "pnl_pct": -0.04,
+        "final_balance": 9996.39,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -3.61,
+        "pnl_pct": -0.04,
+        "final_balance": 9996.39,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 35,
+        "wins": 23,
+        "losses": 12,
+        "win_rate": 65.7,
+        "total_pnl": 2.79,
+        "pnl_pct": 0.03,
+        "final_balance": 10002.79,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 35,
+        "wins": 23,
+        "losses": 12,
+        "win_rate": 65.7,
+        "total_pnl": 2.79,
+        "pnl_pct": 0.03,
+        "final_balance": 10002.79,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 35,
+        "wins": 23,
+        "losses": 12,
+        "win_rate": 65.7,
+        "total_pnl": 2.79,
+        "pnl_pct": 0.03,
+        "final_balance": 10002.79,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 19,
+        "losses": 10,
+        "win_rate": 65.5,
+        "total_pnl": -8.34,
+        "pnl_pct": -0.08,
+        "final_balance": 9991.66,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 19,
+        "losses": 10,
+        "win_rate": 65.5,
+        "total_pnl": -8.34,
+        "pnl_pct": -0.08,
+        "final_balance": 9991.66,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 19,
+        "losses": 10,
+        "win_rate": 65.5,
+        "total_pnl": -8.34,
+        "pnl_pct": -0.08,
+        "final_balance": 9991.66,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 48,
+        "wins": 31,
+        "losses": 17,
+        "win_rate": 64.6,
+        "total_pnl": -2.39,
+        "pnl_pct": -0.02,
+        "final_balance": 9997.61,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 48,
+        "wins": 31,
+        "losses": 17,
+        "win_rate": 64.6,
+        "total_pnl": -2.39,
+        "pnl_pct": -0.02,
+        "final_balance": 9997.61,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 48,
+        "wins": 31,
+        "losses": 17,
+        "win_rate": 64.6,
+        "total_pnl": -2.39,
+        "pnl_pct": -0.02,
+        "final_balance": 9997.61,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 3,
+        "losses": 2,
+        "win_rate": 60.0,
+        "total_pnl": 2.58,
+        "pnl_pct": 0.03,
+        "final_balance": 10002.58,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 104,
+        "wins": 60,
+        "losses": 44,
+        "win_rate": 57.7,
+        "total_pnl": 4.07,
+        "pnl_pct": 0.04,
+        "final_balance": 10004.07,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 106,
+        "wins": 61,
+        "losses": 45,
+        "win_rate": 57.5,
+        "total_pnl": 2.74,
+        "pnl_pct": 0.03,
+        "final_balance": 10002.74,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 108,
+        "wins": 62,
+        "losses": 46,
+        "win_rate": 57.4,
+        "total_pnl": 3.73,
+        "pnl_pct": 0.04,
+        "final_balance": 10003.73,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 66,
+        "wins": 37,
+        "losses": 29,
+        "win_rate": 56.1,
+        "total_pnl": 64.6,
+        "pnl_pct": 0.65,
+        "final_balance": 10064.6,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": -1.08,
+        "pnl_pct": -0.01,
+        "final_balance": 9998.92,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": -1.08,
+        "pnl_pct": -0.01,
+        "final_balance": 9998.92,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 6,
+        "wins": 3,
+        "losses": 3,
+        "win_rate": 50.0,
+        "total_pnl": 5.81,
+        "pnl_pct": 0.06,
+        "final_balance": 10005.81,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 31,
+        "wins": 13,
+        "losses": 18,
+        "win_rate": 41.9,
+        "total_pnl": 38.3,
+        "pnl_pct": 0.38,
+        "final_balance": 10038.3,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 1,
+        "losses": 2,
+        "win_rate": 33.3,
+        "total_pnl": 1.79,
+        "pnl_pct": 0.02,
+        "final_balance": 10001.79,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 10,
+        "wins": 3,
+        "losses": 7,
+        "win_rate": 30.0,
+        "total_pnl": 1.07,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.07,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "total_pnl": -2.52,
+        "pnl_pct": -0.03,
+        "final_balance": 9997.48,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "total_pnl": -1.31,
+        "pnl_pct": -0.01,
+        "final_balance": 9998.69,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "total_pnl": -1.33,
+        "pnl_pct": -0.01,
+        "final_balance": 9998.67,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "total_pnl": -3.28,
+        "pnl_pct": -0.03,
+        "final_balance": 9996.72,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "Breakout_PW",
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 7.72,
+        "pnl_pct": 0.08,
+        "final_balance": 10007.72,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 14,
+        "losses": 1,
+        "win_rate": 93.3,
+        "total_pnl": 26.83,
+        "pnl_pct": 0.27,
+        "final_balance": 10026.83,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 14,
+        "losses": 1,
+        "win_rate": 93.3,
+        "total_pnl": 26.83,
+        "pnl_pct": 0.27,
+        "final_balance": 10026.83,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 14,
+        "losses": 1,
+        "win_rate": 93.3,
+        "total_pnl": 26.83,
+        "pnl_pct": 0.27,
+        "final_balance": 10026.83,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 19,
+        "losses": 2,
+        "win_rate": 90.5,
+        "total_pnl": 32.83,
+        "pnl_pct": 0.33,
+        "final_balance": 10032.83,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 19,
+        "losses": 2,
+        "win_rate": 90.5,
+        "total_pnl": 32.83,
+        "pnl_pct": 0.33,
+        "final_balance": 10032.83,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 19,
+        "losses": 2,
+        "win_rate": 90.5,
+        "total_pnl": 32.83,
+        "pnl_pct": 0.33,
+        "final_balance": 10032.83,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 18,
+        "losses": 2,
+        "win_rate": 90.0,
+        "total_pnl": 33.17,
+        "pnl_pct": 0.33,
+        "final_balance": 10033.17,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 18,
+        "losses": 2,
+        "win_rate": 90.0,
+        "total_pnl": 33.17,
+        "pnl_pct": 0.33,
+        "final_balance": 10033.17,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 20,
+        "wins": 18,
+        "losses": 2,
+        "win_rate": 90.0,
+        "total_pnl": 33.17,
+        "pnl_pct": 0.33,
+        "final_balance": 10033.17,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 8,
+        "wins": 6,
+        "losses": 2,
+        "win_rate": 75.0,
+        "total_pnl": 7.32,
+        "pnl_pct": 0.07,
+        "final_balance": 10007.32,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 8,
+        "wins": 6,
+        "losses": 2,
+        "win_rate": 75.0,
+        "total_pnl": 11.24,
+        "pnl_pct": 0.11,
+        "final_balance": 10011.24,
+        "params": "stoch_ov20"
+      }
+    ],
+    "best_result": {
+      "strategy": "Breakout_PW",
+      "trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_pnl": 7.72,
+      "pnl_pct": 0.08,
+      "final_balance": 10007.72,
+      "params": "lbp30"
+    }
+  },
+  "XRPUSDT": {
+    "all_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 6,
+        "wins": 5,
+        "losses": 1,
+        "win_rate": 83.3,
+        "total_pnl": 0.13,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.13,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 16,
+        "losses": 6,
+        "win_rate": 72.7,
+        "total_pnl": 0.21,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.21,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 16,
+        "losses": 6,
+        "win_rate": 72.7,
+        "total_pnl": 0.21,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.21,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 16,
+        "losses": 6,
+        "win_rate": 72.7,
+        "total_pnl": 0.21,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.21,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 24,
+        "losses": 9,
+        "win_rate": 72.7,
+        "total_pnl": 0.3,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.3,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 24,
+        "losses": 9,
+        "win_rate": 72.7,
+        "total_pnl": 0.3,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.3,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 24,
+        "losses": 9,
+        "win_rate": 72.7,
+        "total_pnl": 0.3,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.3,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 7,
+        "wins": 5,
+        "losses": 2,
+        "win_rate": 71.4,
+        "total_pnl": 0.07,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.07,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 21,
+        "losses": 10,
+        "win_rate": 67.7,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 21,
+        "losses": 10,
+        "win_rate": 67.7,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 21,
+        "losses": 10,
+        "win_rate": 67.7,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 25,
+        "losses": 12,
+        "win_rate": 67.6,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 25,
+        "losses": 12,
+        "win_rate": 67.6,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 25,
+        "losses": 12,
+        "win_rate": 67.6,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 10,
+        "losses": 5,
+        "win_rate": 66.7,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 10,
+        "losses": 5,
+        "win_rate": 66.7,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 10,
+        "losses": 5,
+        "win_rate": 66.7,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 3,
+        "wins": 2,
+        "losses": 1,
+        "win_rate": 66.7,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 17,
+        "losses": 9,
+        "win_rate": 65.4,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 17,
+        "losses": 9,
+        "win_rate": 65.4,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 17,
+        "losses": 9,
+        "win_rate": 65.4,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 44,
+        "wins": 28,
+        "losses": 16,
+        "win_rate": 63.6,
+        "total_pnl": 0.04,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.04,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 44,
+        "wins": 28,
+        "losses": 16,
+        "win_rate": 63.6,
+        "total_pnl": 0.04,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.04,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 44,
+        "wins": 28,
+        "losses": 16,
+        "win_rate": 63.6,
+        "total_pnl": 0.04,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.04,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 10,
+        "losses": 6,
+        "win_rate": 62.5,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 10,
+        "losses": 6,
+        "win_rate": 62.5,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 10,
+        "losses": 6,
+        "win_rate": 62.5,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 84,
+        "wins": 52,
+        "losses": 32,
+        "win_rate": 61.9,
+        "total_pnl": 0.24,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.24,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 82,
+        "wins": 50,
+        "losses": 32,
+        "win_rate": 61.0,
+        "total_pnl": 0.21,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.21,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 81,
+        "wins": 49,
+        "losses": 32,
+        "win_rate": 60.5,
+        "total_pnl": 0.18,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.18,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 9,
+        "wins": 4,
+        "losses": 5,
+        "win_rate": 44.4,
+        "total_pnl": 0.04,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.04,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 60,
+        "wins": 24,
+        "losses": 36,
+        "win_rate": 40.0,
+        "total_pnl": 0.34,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.34,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 32,
+        "wins": 11,
+        "losses": 21,
+        "win_rate": 34.4,
+        "total_pnl": 0.23,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.23,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 3,
+        "wins": 1,
+        "losses": 2,
+        "win_rate": 33.3,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "ema21/100"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 1,
+        "losses": 2,
+        "win_rate": 33.3,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 1,
+        "losses": 2,
+        "win_rate": 33.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 6,
+        "wins": 1,
+        "losses": 5,
+        "win_rate": 16.7,
+        "total_pnl": -0.11,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.89,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "total_pnl": -0.02,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.98,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 3,
+        "wins": 0,
+        "losses": 3,
+        "win_rate": 0.0,
+        "total_pnl": -0.07,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.93,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 1,
+        "wins": 0,
+        "losses": 1,
+        "win_rate": 0.0,
+        "total_pnl": -0.02,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.98,
+        "params": "ema21/50"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 6,
+        "wins": 5,
+        "losses": 1,
+        "win_rate": 83.3,
+        "total_pnl": 0.13,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.13,
+        "params": "stoch_ov15"
+      }
+    ],
+    "best_result": {
+      "strategy": "Stochastic",
+      "trades": 6,
+      "wins": 5,
+      "losses": 1,
+      "win_rate": 83.3,
+      "total_pnl": 0.13,
+      "pnl_pct": 0.0,
+      "final_balance": 10000.13,
+      "params": "stoch_ov15"
+    }
+  },
+  "BNBUSDT": {
+    "all_results": [
+      {
+        "strategy": "MACD_Hist",
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 12.06,
+        "pnl_pct": 0.12,
+        "final_balance": 10012.06,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 4,
+        "losses": 1,
+        "win_rate": 80.0,
+        "total_pnl": 32.49,
+        "pnl_pct": 0.32,
+        "final_balance": 10032.49,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": 30.72,
+        "pnl_pct": 0.31,
+        "final_balance": 10030.72,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": 30.72,
+        "pnl_pct": 0.31,
+        "final_balance": 10030.72,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": 30.72,
+        "pnl_pct": 0.31,
+        "final_balance": 10030.72,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 14,
+        "losses": 7,
+        "win_rate": 66.7,
+        "total_pnl": 19.56,
+        "pnl_pct": 0.2,
+        "final_balance": 10019.56,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 14,
+        "losses": 7,
+        "win_rate": 66.7,
+        "total_pnl": 19.56,
+        "pnl_pct": 0.2,
+        "final_balance": 10019.56,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 21,
+        "wins": 14,
+        "losses": 7,
+        "win_rate": 66.7,
+        "total_pnl": 19.56,
+        "pnl_pct": 0.2,
+        "final_balance": 10019.56,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 3,
+        "wins": 2,
+        "losses": 1,
+        "win_rate": 66.7,
+        "total_pnl": 20.59,
+        "pnl_pct": 0.21,
+        "final_balance": 10020.59,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 3,
+        "wins": 2,
+        "losses": 1,
+        "win_rate": 66.7,
+        "total_pnl": 20.59,
+        "pnl_pct": 0.21,
+        "final_balance": 10020.59,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 9,
+        "wins": 6,
+        "losses": 3,
+        "win_rate": 66.7,
+        "total_pnl": 35.78,
+        "pnl_pct": 0.36,
+        "final_balance": 10035.78,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 25,
+        "wins": 16,
+        "losses": 9,
+        "win_rate": 64.0,
+        "total_pnl": -45.86,
+        "pnl_pct": -0.46,
+        "final_balance": 9954.14,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 25,
+        "wins": 16,
+        "losses": 9,
+        "win_rate": 64.0,
+        "total_pnl": -45.86,
+        "pnl_pct": -0.46,
+        "final_balance": 9954.14,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 25,
+        "wins": 16,
+        "losses": 9,
+        "win_rate": 64.0,
+        "total_pnl": -45.86,
+        "pnl_pct": -0.46,
+        "final_balance": 9954.14,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 72,
+        "wins": 46,
+        "losses": 26,
+        "win_rate": 63.9,
+        "total_pnl": 132.69,
+        "pnl_pct": 1.33,
+        "final_balance": 10132.69,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 71,
+        "wins": 45,
+        "losses": 26,
+        "win_rate": 63.4,
+        "total_pnl": 121.52,
+        "pnl_pct": 1.22,
+        "final_balance": 10121.52,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 70,
+        "wins": 44,
+        "losses": 26,
+        "win_rate": 62.9,
+        "total_pnl": 79.31,
+        "pnl_pct": 0.79,
+        "final_balance": 10079.31,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 11,
+        "losses": 7,
+        "win_rate": 61.1,
+        "total_pnl": 19.81,
+        "pnl_pct": 0.2,
+        "final_balance": 10019.81,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 11,
+        "losses": 7,
+        "win_rate": 61.1,
+        "total_pnl": 19.81,
+        "pnl_pct": 0.2,
+        "final_balance": 10019.81,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 11,
+        "losses": 7,
+        "win_rate": 61.1,
+        "total_pnl": 19.81,
+        "pnl_pct": 0.2,
+        "final_balance": 10019.81,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 17,
+        "losses": 11,
+        "win_rate": 60.7,
+        "total_pnl": -20.7,
+        "pnl_pct": -0.21,
+        "final_balance": 9979.3,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 17,
+        "losses": 11,
+        "win_rate": 60.7,
+        "total_pnl": -20.7,
+        "pnl_pct": -0.21,
+        "final_balance": 9979.3,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 17,
+        "losses": 11,
+        "win_rate": 60.7,
+        "total_pnl": -20.7,
+        "pnl_pct": -0.21,
+        "final_balance": 9979.3,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 9,
+        "losses": 6,
+        "win_rate": 60.0,
+        "total_pnl": -3.09,
+        "pnl_pct": -0.03,
+        "final_balance": 9996.91,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 9,
+        "losses": 6,
+        "win_rate": 60.0,
+        "total_pnl": -3.09,
+        "pnl_pct": -0.03,
+        "final_balance": 9996.91,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 15,
+        "wins": 9,
+        "losses": 6,
+        "win_rate": 60.0,
+        "total_pnl": -3.09,
+        "pnl_pct": -0.03,
+        "final_balance": 9996.91,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 5,
+        "wins": 3,
+        "losses": 2,
+        "win_rate": 60.0,
+        "total_pnl": 15.71,
+        "pnl_pct": 0.16,
+        "final_balance": 10015.71,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 19,
+        "losses": 13,
+        "win_rate": 59.4,
+        "total_pnl": -103.51,
+        "pnl_pct": -1.04,
+        "final_balance": 9896.49,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 19,
+        "losses": 13,
+        "win_rate": 59.4,
+        "total_pnl": -103.51,
+        "pnl_pct": -1.04,
+        "final_balance": 9896.49,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 19,
+        "losses": 13,
+        "win_rate": 59.4,
+        "total_pnl": -103.51,
+        "pnl_pct": -1.04,
+        "final_balance": 9896.49,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": -33.42,
+        "pnl_pct": -0.33,
+        "final_balance": 9966.58,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": -33.42,
+        "pnl_pct": -0.33,
+        "final_balance": 9966.58,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": -33.42,
+        "pnl_pct": -0.33,
+        "final_balance": 9966.58,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 14,
+        "wins": 8,
+        "losses": 6,
+        "win_rate": 57.1,
+        "total_pnl": 11.5,
+        "pnl_pct": 0.11,
+        "final_balance": 10011.5,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 13,
+        "losses": 10,
+        "win_rate": 56.5,
+        "total_pnl": -76.71,
+        "pnl_pct": -0.77,
+        "final_balance": 9923.29,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 13,
+        "losses": 10,
+        "win_rate": 56.5,
+        "total_pnl": -76.71,
+        "pnl_pct": -0.77,
+        "final_balance": 9923.29,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 13,
+        "losses": 10,
+        "win_rate": 56.5,
+        "total_pnl": -76.71,
+        "pnl_pct": -0.77,
+        "final_balance": 9923.29,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 55,
+        "wins": 29,
+        "losses": 26,
+        "win_rate": 52.7,
+        "total_pnl": 299.61,
+        "pnl_pct": 3.0,
+        "final_balance": 10299.61,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 32,
+        "wins": 16,
+        "losses": 16,
+        "win_rate": 50.0,
+        "total_pnl": 130.77,
+        "pnl_pct": 1.31,
+        "final_balance": 10130.77,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 6,
+        "wins": 3,
+        "losses": 3,
+        "win_rate": 50.0,
+        "total_pnl": 3.17,
+        "pnl_pct": 0.03,
+        "final_balance": 10003.17,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 12,
+        "wins": 5,
+        "losses": 7,
+        "win_rate": 41.7,
+        "total_pnl": 78.92,
+        "pnl_pct": 0.79,
+        "final_balance": 10078.92,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 2,
+        "losses": 3,
+        "win_rate": 40.0,
+        "total_pnl": -28.34,
+        "pnl_pct": -0.28,
+        "final_balance": 9971.66,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "total_pnl": -40.18,
+        "pnl_pct": -0.4,
+        "final_balance": 9959.82,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 0,
+        "losses": 3,
+        "win_rate": 0.0,
+        "total_pnl": -44.98,
+        "pnl_pct": -0.45,
+        "final_balance": 9955.02,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "total_pnl": -28.4,
+        "pnl_pct": -0.28,
+        "final_balance": 9971.6,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 0,
+        "losses": 2,
+        "win_rate": 0.0,
+        "total_pnl": -28.4,
+        "pnl_pct": -0.28,
+        "final_balance": 9971.6,
+        "params": "lbp30"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "MACD_Hist",
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 12.06,
+        "pnl_pct": 0.12,
+        "final_balance": 10012.06,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 4,
+        "losses": 1,
+        "win_rate": 80.0,
+        "total_pnl": 32.49,
+        "pnl_pct": 0.32,
+        "final_balance": 10032.49,
+        "params": "stoch_ov15"
+      }
+    ],
+    "best_result": {
+      "strategy": "MACD_Hist",
+      "trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_pnl": 12.06,
+      "pnl_pct": 0.12,
+      "final_balance": 10012.06,
+      "params": "hist-1.0_adx20"
+    }
+  },
+  "DOGEUSDT": {
+    "all_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 7,
+        "wins": 6,
+        "losses": 1,
+        "win_rate": 85.7,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 18,
+        "losses": 5,
+        "win_rate": 78.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 18,
+        "losses": 5,
+        "win_rate": 78.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 18,
+        "losses": 5,
+        "win_rate": 78.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 21,
+        "losses": 7,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 21,
+        "losses": 7,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 21,
+        "losses": 7,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 24,
+        "losses": 8,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 24,
+        "losses": 8,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 24,
+        "losses": 8,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 7,
+        "wins": 5,
+        "losses": 2,
+        "win_rate": 71.4,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 38,
+        "wins": 26,
+        "losses": 12,
+        "win_rate": 68.4,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 38,
+        "wins": 26,
+        "losses": 12,
+        "win_rate": 68.4,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 38,
+        "wins": 26,
+        "losses": 12,
+        "win_rate": 68.4,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 23,
+        "losses": 11,
+        "win_rate": 67.6,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 23,
+        "losses": 11,
+        "win_rate": 67.6,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 23,
+        "losses": 11,
+        "win_rate": 67.6,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 9,
+        "losses": 5,
+        "win_rate": 64.3,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 9,
+        "losses": 5,
+        "win_rate": 64.3,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 9,
+        "losses": 5,
+        "win_rate": 64.3,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 8,
+        "wins": 5,
+        "losses": 3,
+        "win_rate": 62.5,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 45,
+        "wins": 28,
+        "losses": 17,
+        "win_rate": 62.2,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 45,
+        "wins": 28,
+        "losses": 17,
+        "win_rate": 62.2,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 45,
+        "wins": 28,
+        "losses": 17,
+        "win_rate": 62.2,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 99,
+        "wins": 60,
+        "losses": 39,
+        "win_rate": 60.6,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 100,
+        "wins": 59,
+        "losses": 41,
+        "win_rate": 59.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 10,
+        "losses": 7,
+        "win_rate": 58.8,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 10,
+        "losses": 7,
+        "win_rate": 58.8,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 10,
+        "losses": 7,
+        "win_rate": 58.8,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 101,
+        "wins": 59,
+        "losses": 42,
+        "win_rate": 58.4,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 60,
+        "wins": 33,
+        "losses": 27,
+        "win_rate": 55.0,
+        "total_pnl": 0.04,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.04,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 6,
+        "wins": 3,
+        "losses": 3,
+        "win_rate": 50.0,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 32,
+        "wins": 14,
+        "losses": 18,
+        "win_rate": 43.8,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 15,
+        "wins": 4,
+        "losses": 11,
+        "win_rate": 26.7,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 7,
+        "wins": 6,
+        "losses": 1,
+        "win_rate": 85.7,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 18,
+        "losses": 5,
+        "win_rate": 78.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 18,
+        "losses": 5,
+        "win_rate": 78.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 23,
+        "wins": 18,
+        "losses": 5,
+        "win_rate": 78.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 21,
+        "losses": 7,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 21,
+        "losses": 7,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 28,
+        "wins": 21,
+        "losses": 7,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 24,
+        "losses": 8,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 24,
+        "losses": 8,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 32,
+        "wins": 24,
+        "losses": 8,
+        "win_rate": 75.0,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "rsi(35/75)_adx25"
+      }
+    ],
+    "best_result": {
+      "strategy": "Stochastic",
+      "trades": 7,
+      "wins": 6,
+      "losses": 1,
+      "win_rate": 85.7,
+      "total_pnl": 0.01,
+      "pnl_pct": 0.0,
+      "final_balance": 10000.01,
+      "params": "stoch_ov20"
+    }
+  },
+  "ADAUSDT": {
+    "all_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 8,
+        "wins": 7,
+        "losses": 1,
+        "win_rate": 87.5,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 6,
+        "wins": 5,
+        "losses": 1,
+        "win_rate": 83.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 27,
+        "losses": 7,
+        "win_rate": 79.4,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 27,
+        "losses": 7,
+        "win_rate": 79.4,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 27,
+        "losses": 7,
+        "win_rate": 79.4,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 19,
+        "losses": 5,
+        "win_rate": 79.2,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 19,
+        "losses": 5,
+        "win_rate": 79.2,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 19,
+        "losses": 5,
+        "win_rate": 79.2,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 30,
+        "losses": 9,
+        "win_rate": 76.9,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 30,
+        "losses": 9,
+        "win_rate": 76.9,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 30,
+        "losses": 9,
+        "win_rate": 76.9,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 52,
+        "wins": 38,
+        "losses": 14,
+        "win_rate": 73.1,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 52,
+        "wins": 38,
+        "losses": 14,
+        "win_rate": 73.1,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 52,
+        "wins": 38,
+        "losses": 14,
+        "win_rate": 73.1,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 23,
+        "losses": 10,
+        "win_rate": 69.7,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 23,
+        "losses": 10,
+        "win_rate": 69.7,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 23,
+        "losses": 10,
+        "win_rate": 69.7,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 55,
+        "wins": 37,
+        "losses": 18,
+        "win_rate": 67.3,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 55,
+        "wins": 37,
+        "losses": 18,
+        "win_rate": 67.3,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 55,
+        "wins": 37,
+        "losses": 18,
+        "win_rate": 67.3,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 12,
+        "losses": 6,
+        "win_rate": 66.7,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 8,
+        "losses": 4,
+        "win_rate": 66.7,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 12,
+        "losses": 6,
+        "win_rate": 66.7,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 8,
+        "losses": 4,
+        "win_rate": 66.7,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 12,
+        "losses": 6,
+        "win_rate": 66.7,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 8,
+        "losses": 4,
+        "win_rate": 66.7,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 12,
+        "wins": 8,
+        "losses": 4,
+        "win_rate": 66.7,
+        "total_pnl": 0.02,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.02,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 107,
+        "wins": 62,
+        "losses": 45,
+        "win_rate": 57.9,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 107,
+        "wins": 62,
+        "losses": 45,
+        "win_rate": 57.9,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 107,
+        "wins": 61,
+        "losses": 46,
+        "win_rate": 57.0,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 10,
+        "losses": 8,
+        "win_rate": 55.6,
+        "total_pnl": -0.03,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.97,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 10,
+        "losses": 8,
+        "win_rate": 55.6,
+        "total_pnl": -0.03,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.97,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 10,
+        "losses": 8,
+        "win_rate": 55.6,
+        "total_pnl": -0.03,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.97,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 69,
+        "wins": 36,
+        "losses": 33,
+        "win_rate": 52.2,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 38,
+        "wins": 17,
+        "losses": 21,
+        "win_rate": 44.7,
+        "total_pnl": 0.09,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.09,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 5,
+        "wins": 2,
+        "losses": 3,
+        "win_rate": 40.0,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 15,
+        "wins": 4,
+        "losses": 11,
+        "win_rate": 26.7,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 8,
+        "wins": 7,
+        "losses": 1,
+        "win_rate": 87.5,
+        "total_pnl": 0.05,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.05,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 6,
+        "wins": 5,
+        "losses": 1,
+        "win_rate": 83.3,
+        "total_pnl": 0.03,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.03,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 27,
+        "losses": 7,
+        "win_rate": 79.4,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 27,
+        "losses": 7,
+        "win_rate": 79.4,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 34,
+        "wins": 27,
+        "losses": 7,
+        "win_rate": 79.4,
+        "total_pnl": 0.12,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.12,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 19,
+        "losses": 5,
+        "win_rate": 79.2,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 19,
+        "losses": 5,
+        "win_rate": 79.2,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 24,
+        "wins": 19,
+        "losses": 5,
+        "win_rate": 79.2,
+        "total_pnl": 0.08,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.08,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 30,
+        "losses": 9,
+        "win_rate": 76.9,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 30,
+        "losses": 9,
+        "win_rate": 76.9,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 30,
+        "losses": 9,
+        "win_rate": 76.9,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "rsi(35/75)_adx25"
+      }
+    ],
+    "best_result": {
+      "strategy": "Stochastic",
+      "trades": 8,
+      "wins": 7,
+      "losses": 1,
+      "win_rate": 87.5,
+      "total_pnl": 0.05,
+      "pnl_pct": 0.0,
+      "final_balance": 10000.05,
+      "params": "stoch_ov20"
+    }
+  },
+  "TRXUSDT": {
+    "all_results": [
+      {
+        "strategy": "EMA_Trend",
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "ema21/100"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 12,
+        "losses": 5,
+        "win_rate": 70.6,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 12,
+        "losses": 5,
+        "win_rate": 70.6,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 12,
+        "losses": 5,
+        "win_rate": 70.6,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 11,
+        "losses": 5,
+        "win_rate": 68.8,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 11,
+        "losses": 5,
+        "win_rate": 68.8,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 16,
+        "wins": 11,
+        "losses": 5,
+        "win_rate": 68.8,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 25,
+        "wins": 17,
+        "losses": 8,
+        "win_rate": 68.0,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 25,
+        "wins": 17,
+        "losses": 8,
+        "win_rate": 68.0,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 25,
+        "wins": 17,
+        "losses": 8,
+        "win_rate": 68.0,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 3,
+        "wins": 2,
+        "losses": 1,
+        "win_rate": 66.7,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 9,
+        "losses": 5,
+        "win_rate": 64.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 9,
+        "losses": 5,
+        "win_rate": 64.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 9,
+        "losses": 5,
+        "win_rate": 64.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 34,
+        "wins": 20,
+        "losses": 14,
+        "win_rate": 58.8,
+        "total_pnl": -0.02,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.98,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 12,
+        "wins": 7,
+        "losses": 5,
+        "win_rate": 58.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 31,
+        "wins": 18,
+        "losses": 13,
+        "win_rate": 58.1,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 28,
+        "wins": 16,
+        "losses": 12,
+        "win_rate": 57.1,
+        "total_pnl": -0.02,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.98,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 6,
+        "losses": 5,
+        "win_rate": 54.5,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 6,
+        "losses": 5,
+        "win_rate": 54.5,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 6,
+        "losses": 5,
+        "win_rate": 54.5,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 9,
+        "losses": 8,
+        "win_rate": 52.9,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 9,
+        "losses": 8,
+        "win_rate": 52.9,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 17,
+        "wins": 9,
+        "losses": 8,
+        "win_rate": 52.9,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 7,
+        "losses": 7,
+        "win_rate": 50.0,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 7,
+        "losses": 7,
+        "win_rate": 50.0,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 7,
+        "losses": 7,
+        "win_rate": 50.0,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 2,
+        "losses": 3,
+        "win_rate": 40.0,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 26,
+        "wins": 10,
+        "losses": 16,
+        "win_rate": 38.5,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 4,
+        "wins": 1,
+        "losses": 3,
+        "win_rate": 25.0,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 4,
+        "wins": 1,
+        "losses": 3,
+        "win_rate": 25.0,
+        "total_pnl": -0.0,
+        "pnl_pct": -0.0,
+        "final_balance": 10000.0,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 15,
+        "wins": 2,
+        "losses": 13,
+        "win_rate": 13.3,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 8,
+        "wins": 1,
+        "losses": 7,
+        "win_rate": 12.5,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/50"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "EMA_Trend",
+        "trades": 1,
+        "wins": 1,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "ema21/100"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.0,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.0,
+        "params": "rsi(35/75)_adx20"
+      }
+    ],
+    "best_result": {
+      "strategy": "EMA_Trend",
+      "trades": 1,
+      "wins": 1,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_pnl": 0.0,
+      "pnl_pct": 0.0,
+      "final_balance": 10000.0,
+      "params": "ema21/100"
+    }
+  },
+  "AVAXUSDT": {
+    "all_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.44,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.44,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 14,
+        "losses": 4,
+        "win_rate": 77.8,
+        "total_pnl": 0.97,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.97,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 14,
+        "losses": 4,
+        "win_rate": 77.8,
+        "total_pnl": 0.97,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.97,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 14,
+        "losses": 4,
+        "win_rate": 77.8,
+        "total_pnl": 0.97,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.97,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 2.24,
+        "pnl_pct": 0.02,
+        "final_balance": 10002.24,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 2.24,
+        "pnl_pct": 0.02,
+        "final_balance": 10002.24,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 2.24,
+        "pnl_pct": 0.02,
+        "final_balance": 10002.24,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 24,
+        "losses": 7,
+        "win_rate": 77.4,
+        "total_pnl": 1.25,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.25,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 24,
+        "losses": 7,
+        "win_rate": 77.4,
+        "total_pnl": 1.25,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.25,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 24,
+        "losses": 7,
+        "win_rate": 77.4,
+        "total_pnl": 1.25,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.25,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.9,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.9,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.9,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.9,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.9,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.9,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 22,
+        "losses": 7,
+        "win_rate": 75.9,
+        "total_pnl": 1.04,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.04,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 22,
+        "losses": 7,
+        "win_rate": 75.9,
+        "total_pnl": 1.04,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.04,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 22,
+        "losses": 7,
+        "win_rate": 75.9,
+        "total_pnl": 1.04,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.04,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 4,
+        "wins": 3,
+        "losses": 1,
+        "win_rate": 75.0,
+        "total_pnl": 0.26,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.26,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 8,
+        "losses": 3,
+        "win_rate": 72.7,
+        "total_pnl": 0.07,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.07,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 8,
+        "losses": 3,
+        "win_rate": 72.7,
+        "total_pnl": 0.07,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.07,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 8,
+        "losses": 3,
+        "win_rate": 72.7,
+        "total_pnl": 0.07,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.07,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 50,
+        "wins": 36,
+        "losses": 14,
+        "win_rate": 72.0,
+        "total_pnl": 1.37,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.37,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 50,
+        "wins": 36,
+        "losses": 14,
+        "win_rate": 72.0,
+        "total_pnl": 1.37,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.37,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 50,
+        "wins": 36,
+        "losses": 14,
+        "win_rate": 72.0,
+        "total_pnl": 1.37,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.37,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 26,
+        "losses": 11,
+        "win_rate": 70.3,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 26,
+        "losses": 11,
+        "win_rate": 70.3,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 37,
+        "wins": 26,
+        "losses": 11,
+        "win_rate": 70.3,
+        "total_pnl": 0.01,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.01,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -0.37,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.63,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -0.37,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.63,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 15,
+        "losses": 7,
+        "win_rate": 68.2,
+        "total_pnl": -0.37,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.63,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 6,
+        "wins": 4,
+        "losses": 2,
+        "win_rate": 66.7,
+        "total_pnl": 0.35,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.35,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 2,
+        "losses": 1,
+        "win_rate": 66.7,
+        "total_pnl": 1.06,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.06,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 2,
+        "losses": 1,
+        "win_rate": 66.7,
+        "total_pnl": 1.06,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.06,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 107,
+        "wins": 70,
+        "losses": 37,
+        "win_rate": 65.4,
+        "total_pnl": 5.13,
+        "pnl_pct": 0.05,
+        "final_balance": 10005.13,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 107,
+        "wins": 69,
+        "losses": 38,
+        "win_rate": 64.5,
+        "total_pnl": 4.75,
+        "pnl_pct": 0.05,
+        "final_balance": 10004.75,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 107,
+        "wins": 69,
+        "losses": 38,
+        "win_rate": 64.5,
+        "total_pnl": 4.38,
+        "pnl_pct": 0.04,
+        "final_balance": 10004.38,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 60,
+        "wins": 38,
+        "losses": 22,
+        "win_rate": 63.3,
+        "total_pnl": 5.92,
+        "pnl_pct": 0.06,
+        "final_balance": 10005.92,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 35,
+        "wins": 16,
+        "losses": 19,
+        "win_rate": 45.7,
+        "total_pnl": 2.26,
+        "pnl_pct": 0.02,
+        "final_balance": 10002.26,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 6,
+        "wins": 2,
+        "losses": 4,
+        "win_rate": 33.3,
+        "total_pnl": 0.34,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.34,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 16,
+        "wins": 5,
+        "losses": 11,
+        "win_rate": 31.2,
+        "total_pnl": 0.29,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.29,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "Stochastic",
+        "trades": 2,
+        "wins": 2,
+        "losses": 0,
+        "win_rate": 100.0,
+        "total_pnl": 0.44,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.44,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 14,
+        "losses": 4,
+        "win_rate": 77.8,
+        "total_pnl": 0.97,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.97,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 14,
+        "losses": 4,
+        "win_rate": 77.8,
+        "total_pnl": 0.97,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.97,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 18,
+        "wins": 14,
+        "losses": 4,
+        "win_rate": 77.8,
+        "total_pnl": 0.97,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.97,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 2.24,
+        "pnl_pct": 0.02,
+        "final_balance": 10002.24,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 2.24,
+        "pnl_pct": 0.02,
+        "final_balance": 10002.24,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 2.24,
+        "pnl_pct": 0.02,
+        "final_balance": 10002.24,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 24,
+        "losses": 7,
+        "win_rate": 77.4,
+        "total_pnl": 1.25,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.25,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 24,
+        "losses": 7,
+        "win_rate": 77.4,
+        "total_pnl": 1.25,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.25,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 31,
+        "wins": 24,
+        "losses": 7,
+        "win_rate": 77.4,
+        "total_pnl": 1.25,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.25,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.9,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.9,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.9,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.9,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 22,
+        "wins": 17,
+        "losses": 5,
+        "win_rate": 77.3,
+        "total_pnl": 0.9,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.9,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 22,
+        "losses": 7,
+        "win_rate": 75.9,
+        "total_pnl": 1.04,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.04,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 22,
+        "losses": 7,
+        "win_rate": 75.9,
+        "total_pnl": 1.04,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.04,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 29,
+        "wins": 22,
+        "losses": 7,
+        "win_rate": 75.9,
+        "total_pnl": 1.04,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.04,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 4,
+        "wins": 3,
+        "losses": 1,
+        "win_rate": 75.0,
+        "total_pnl": 0.26,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.26,
+        "params": "stoch_ov20"
+      }
+    ],
+    "best_result": {
+      "strategy": "Stochastic",
+      "trades": 2,
+      "wins": 2,
+      "losses": 0,
+      "win_rate": 100.0,
+      "total_pnl": 0.44,
+      "pnl_pct": 0.0,
+      "final_balance": 10000.44,
+      "params": "stoch_ov15"
+    }
+  },
+  "DOTUSDT": {
+    "all_results": [
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 21,
+        "losses": 5,
+        "win_rate": 80.8,
+        "total_pnl": 0.38,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.38,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 21,
+        "losses": 5,
+        "win_rate": 80.8,
+        "total_pnl": 0.38,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.38,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 21,
+        "losses": 5,
+        "win_rate": 80.8,
+        "total_pnl": 0.38,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.38,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 4,
+        "losses": 1,
+        "win_rate": 80.0,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 0.59,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.59,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 0.59,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.59,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 0.59,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.59,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 25,
+        "losses": 8,
+        "win_rate": 75.8,
+        "total_pnl": 0.32,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.32,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 25,
+        "losses": 8,
+        "win_rate": 75.8,
+        "total_pnl": 0.32,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.32,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 25,
+        "losses": 8,
+        "win_rate": 75.8,
+        "total_pnl": 0.32,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.32,
+        "params": "rsi(30/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 8,
+        "losses": 3,
+        "win_rate": 72.7,
+        "total_pnl": -0.04,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.96,
+        "params": "rsi(25/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 8,
+        "losses": 3,
+        "win_rate": 72.7,
+        "total_pnl": -0.04,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.96,
+        "params": "rsi(25/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 11,
+        "wins": 8,
+        "losses": 3,
+        "win_rate": 72.7,
+        "total_pnl": -0.04,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.96,
+        "params": "rsi(25/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 14,
+        "wins": 10,
+        "losses": 4,
+        "win_rate": 71.4,
+        "total_pnl": -0.01,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.99,
+        "params": "rsi(25/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": -0.06,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.94,
+        "params": "rsi(25/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": -0.06,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.94,
+        "params": "rsi(25/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 13,
+        "wins": 9,
+        "losses": 4,
+        "win_rate": 69.2,
+        "total_pnl": -0.06,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.94,
+        "params": "rsi(25/75)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 61,
+        "wins": 41,
+        "losses": 20,
+        "win_rate": 67.2,
+        "total_pnl": 0.36,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.36,
+        "params": "rsi(35/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 61,
+        "wins": 41,
+        "losses": 20,
+        "win_rate": 67.2,
+        "total_pnl": 0.36,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.36,
+        "params": "rsi(35/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 61,
+        "wins": 41,
+        "losses": 20,
+        "win_rate": 67.2,
+        "total_pnl": 0.36,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.36,
+        "params": "rsi(35/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 26,
+        "losses": 13,
+        "win_rate": 66.7,
+        "total_pnl": 0.33,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.33,
+        "params": "rsi(35/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 26,
+        "losses": 13,
+        "win_rate": 66.7,
+        "total_pnl": 0.33,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.33,
+        "params": "rsi(35/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 39,
+        "wins": 26,
+        "losses": 13,
+        "win_rate": 66.7,
+        "total_pnl": 0.33,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.33,
+        "params": "rsi(35/75)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 49,
+        "wins": 31,
+        "losses": 18,
+        "win_rate": 63.3,
+        "total_pnl": 0.09,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.09,
+        "params": "rsi(35/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 49,
+        "wins": 31,
+        "losses": 18,
+        "win_rate": 63.3,
+        "total_pnl": 0.09,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.09,
+        "params": "rsi(35/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 49,
+        "wins": 31,
+        "losses": 18,
+        "win_rate": 63.3,
+        "total_pnl": 0.09,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.09,
+        "params": "rsi(35/75)_adx20"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 63,
+        "wins": 39,
+        "losses": 24,
+        "win_rate": 61.9,
+        "total_pnl": 1.12,
+        "pnl_pct": 0.01,
+        "final_balance": 10001.12,
+        "params": "bb_std1.5"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 102,
+        "wins": 60,
+        "losses": 42,
+        "win_rate": 58.8,
+        "total_pnl": 0.27,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.27,
+        "params": "vwap_dev0.003"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 102,
+        "wins": 60,
+        "losses": 42,
+        "win_rate": 58.8,
+        "total_pnl": 0.27,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.27,
+        "params": "vwap_dev0.005"
+      },
+      {
+        "strategy": "VWAP_Rev",
+        "trades": 99,
+        "wins": 58,
+        "losses": 41,
+        "win_rate": 58.6,
+        "total_pnl": 0.17,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.17,
+        "params": "vwap_dev0.008"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 34,
+        "wins": 17,
+        "losses": 17,
+        "win_rate": 50.0,
+        "total_pnl": 0.53,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.53,
+        "params": "bb_std2.0"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 4,
+        "wins": 2,
+        "losses": 2,
+        "win_rate": 50.0,
+        "total_pnl": -0.03,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.97,
+        "params": "stoch_ov20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 0.29,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.29,
+        "params": "lbp20"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 2,
+        "wins": 1,
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": 0.29,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.29,
+        "params": "lbp30"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 7,
+        "wins": 3,
+        "losses": 4,
+        "win_rate": 42.9,
+        "total_pnl": -0.06,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.94,
+        "params": "stoch_ov25"
+      },
+      {
+        "strategy": "Breakout_PW",
+        "trades": 3,
+        "wins": 1,
+        "losses": 2,
+        "win_rate": 33.3,
+        "total_pnl": 0.2,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.2,
+        "params": "lbp10"
+      },
+      {
+        "strategy": "BB_Bounce",
+        "trades": 13,
+        "wins": 1,
+        "losses": 12,
+        "win_rate": 7.7,
+        "total_pnl": -0.14,
+        "pnl_pct": -0.0,
+        "final_balance": 9999.86,
+        "params": "bb_std2.5"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-1.0_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.5_adx30"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx20"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx25"
+      },
+      {
+        "strategy": "MACD_Hist",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "hist-0.2_adx30"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema9/100"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/50"
+      },
+      {
+        "strategy": "EMA_Trend",
+        "trades": 0,
+        "win_rate": 0,
+        "params": "ema21/100"
+      }
+    ],
+    "high_wr_results": [
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 21,
+        "losses": 5,
+        "win_rate": 80.8,
+        "total_pnl": 0.38,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.38,
+        "params": "rsi(30/65)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 21,
+        "losses": 5,
+        "win_rate": 80.8,
+        "total_pnl": 0.38,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.38,
+        "params": "rsi(30/70)_adx25"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 26,
+        "wins": 21,
+        "losses": 5,
+        "win_rate": 80.8,
+        "total_pnl": 0.38,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.38,
+        "params": "rsi(30/75)_adx25"
+      },
+      {
+        "strategy": "Stochastic",
+        "trades": 5,
+        "wins": 4,
+        "losses": 1,
+        "win_rate": 80.0,
+        "total_pnl": 0.11,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.11,
+        "params": "stoch_ov15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 0.59,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.59,
+        "params": "rsi(30/65)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 0.59,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.59,
+        "params": "rsi(30/70)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 40,
+        "wins": 31,
+        "losses": 9,
+        "win_rate": 77.5,
+        "total_pnl": 0.59,
+        "pnl_pct": 0.01,
+        "final_balance": 10000.59,
+        "params": "rsi(30/75)_adx15"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 25,
+        "losses": 8,
+        "win_rate": 75.8,
+        "total_pnl": 0.32,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.32,
+        "params": "rsi(30/65)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 25,
+        "losses": 8,
+        "win_rate": 75.8,
+        "total_pnl": 0.32,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.32,
+        "params": "rsi(30/70)_adx20"
+      },
+      {
+        "strategy": "RSI_MeanRev",
+        "trades": 33,
+        "wins": 25,
+        "losses": 8,
+        "win_rate": 75.8,
+        "total_pnl": 0.32,
+        "pnl_pct": 0.0,
+        "final_balance": 10000.32,
+        "params": "rsi(30/75)_adx20"
+      }
+    ],
+    "best_result": {
+      "strategy": "RSI_MeanRev",
+      "trades": 26,
+      "wins": 21,
+      "losses": 5,
+      "win_rate": 80.8,
+      "total_pnl": 0.38,
+      "pnl_pct": 0.0,
+      "final_balance": 10000.38,
+      "params": "rsi(30/65)_adx25"
+    }
+  }
+}

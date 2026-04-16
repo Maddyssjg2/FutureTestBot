@@ -1,0 +1,112 @@
+[
+  {
+    "symbol": "BTCUSDT",
+    "model_type": "GradientBoosting",
+    "accuracy": 0.48704663212435234,
+    "rf_accuracy": 0.46113989637305697,
+    "gb_accuracy": 0.48704663212435234,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_BTCUSDT.pkl"
+  },
+  {
+    "symbol": "ETHUSDT",
+    "model_type": "GradientBoosting",
+    "accuracy": 0.5181347150259067,
+    "rf_accuracy": 0.48186528497409326,
+    "gb_accuracy": 0.5181347150259067,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_ETHUSDT.pkl"
+  },
+  {
+    "symbol": "SOLUSDT",
+    "model_type": "RandomForest",
+    "accuracy": 0.5284974093264249,
+    "rf_accuracy": 0.5284974093264249,
+    "gb_accuracy": 0.5025906735751295,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_SOLUSDT.pkl"
+  },
+  {
+    "symbol": "XRPUSDT",
+    "model_type": "GradientBoosting",
+    "accuracy": 0.5129533678756477,
+    "rf_accuracy": 0.47668393782383417,
+    "gb_accuracy": 0.5129533678756477,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_XRPUSDT.pkl"
+  },
+  {
+    "symbol": "BNBUSDT",
+    "model_type": "RandomForest",
+    "accuracy": 0.48704663212435234,
+    "rf_accuracy": 0.48704663212435234,
+    "gb_accuracy": 0.48186528497409326,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_BNBUSDT.pkl"
+  },
+  {
+    "symbol": "DOGEUSDT",
+    "model_type": "GradientBoosting",
+    "accuracy": 0.5492227979274611,
+    "rf_accuracy": 0.46632124352331605,
+    "gb_accuracy": 0.5492227979274611,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_DOGEUSDT.pkl"
+  },
+  {
+    "symbol": "ADAUSDT",
+    "model_type": "GradientBoosting",
+    "accuracy": 0.5181347150259067,
+    "rf_accuracy": 0.5077720207253886,
+    "gb_accuracy": 0.5181347150259067,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_ADAUSDT.pkl"
+  },
+  {
+    "symbol": "TRXUSDT",
+    "model_type": "GradientBoosting",
+    "accuracy": 0.47150259067357514,
+    "rf_accuracy": 0.46632124352331605,
+    "gb_accuracy": 0.47150259067357514,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_TRXUSDT.pkl"
+  },
+  {
+    "symbol": "AVAXUSDT",
+    "model_type": "GradientBoosting",
+    "accuracy": 0.5492227979274611,
+    "rf_accuracy": 0.5129533678756477,
+    "gb_accuracy": 0.5492227979274611,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_AVAXUSDT.pkl"
+  },
+  {
+    "symbol": "DOTUSDT",
+    "model_type": "RandomForest",
+    "accuracy": 0.5129533678756477,
+    "rf_accuracy": 0.5129533678756477,
+    "gb_accuracy": 0.5129533678756477,
+    "train_samples": 768,
+    "test_samples": 193,
+    "features": 300,
+    "model_path": "D:\\Futures\\backend\\ml_models\\ml_DOTUSDT.pkl"
+  }
+]

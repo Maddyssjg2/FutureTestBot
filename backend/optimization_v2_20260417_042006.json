@@ -1,0 +1,119 @@
+{
+  "BTCUSDT": {
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 25,
+      "adx_min": 25
+    },
+    "win_rate": 73.80952380952381,
+    "trades": 42,
+    "wins": 31,
+    "losses": 11,
+    "avg_pnl": 0.002142857142857142
+  },
+  "ETHUSDT": {
+    "strategy": "Bollinger",
+    "params": {
+      "period": 15
+    },
+    "win_rate": 71.1864406779661,
+    "trades": 61,
+    "wins": 42,
+    "losses": 17,
+    "avg_pnl": 0.0011152802183603968
+  },
+  "SOLUSDT": {
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 25,
+      "adx_min": 0
+    },
+    "win_rate": 80.3030303030303,
+    "trades": 68,
+    "wins": 53,
+    "losses": 13,
+    "avg_pnl": 0.003821892925194075
+  },
+  "XRPUSDT": {
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 25,
+      "adx_min": 25
+    },
+    "win_rate": 70.37037037037037,
+    "trades": 27,
+    "wins": 19,
+    "losses": 8,
+    "avg_pnl": 0.0011111111111111113
+  },
+  "BNBUSDT": {
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 40,
+      "adx_min": 20
+    },
+    "win_rate": 70.68062827225131,
+    "trades": 196,
+    "wins": 135,
+    "losses": 56,
+    "avg_pnl": 0.001084588029490149
+  },
+  "DOGEUSDT": {
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 25,
+      "adx_min": 25
+    },
+    "win_rate": 74.28571428571429,
+    "trades": 35,
+    "wins": 26,
+    "losses": 9,
+    "avg_pnl": 0.0022857142857142863
+  },
+  "ADAUSDT": {
+    "strategy": "Bollinger",
+    "params": {
+      "period": 20
+    },
+    "win_rate": 80.59701492537313,
+    "trades": 68,
+    "wins": 54,
+    "losses": 13,
+    "avg_pnl": 0.004012304062025958
+  },
+  "TRXUSDT": {
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 45,
+      "adx_min": 25
+    },
+    "win_rate": 70.19867549668875,
+    "trades": 174,
+    "wins": 106,
+    "losses": 45,
+    "avg_pnl": 0.00042487810363375225
+  },
+  "AVAXUSDT": {
+    "strategy": "RSI_MeanRev",
+    "params": {
+      "rsi_oversold": 30,
+      "adx_min": 25
+    },
+    "win_rate": 75.36231884057972,
+    "trades": 70,
+    "wins": 52,
+    "losses": 17,
+    "avg_pnl": 0.002475228475228475
+  },
+  "DOTUSDT": {
+    "strategy": "Bollinger",
+    "params": {
+      "period": 25
+    },
+    "win_rate": 76.78571428571429,
+    "trades": 56,
+    "wins": 43,
+    "losses": 13,
+    "avg_pnl": 0.003035714285714286
+  }
+}
