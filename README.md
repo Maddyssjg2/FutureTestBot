@@ -1,14 +1,11 @@
-# FutureTestBot
+# eigenbirdagent
 
-## Overview
-Repo: Maddyssjg2/FutureTestBot  
-Branch: main  
-Stars: 0
+This repository is documented from the latest synced code context in Eigenbird.
 
-## What it Does
-This repository contains the source code for a bot designed to interact with GitHub issues and pull requests, providing automated responses and managing workflow.
+## What This Repo Does
+
+Based on the synced source, this repo runs backend/API logic for the application, provides a browser-based frontend experience, works with GitHub repository or pull request data, and uses knowledge/context features to improve agent responses.
 
 ## Key Areas
-- **Automated Issue Management**
-- **Pull Request Automation**
-- **Integration with GitHub API**
+
+- Synced repository context available in Eigenbird
