@@ -36,7 +36,7 @@ try:
     
     if data.get('success'):
         symbols = data.get('symbols', [])
-        print(f"\n✓ Bot started successfully!")
+        print("[OK] Bot started successfully!")
         print(f"Monitoring {len(symbols)} futures pairs...")
         print(f"Pairs: {', '.join(symbols[:5])}...")
         print("Press Ctrl+C to stop")
@@ -47,11 +47,11 @@ try:
         except KeyboardInterrupt:
             print("\n\nStopping bot...")
             resp = requests.post(f'{API_BASE}/api/stop', timeout=10)
-            print("✓ Bot stopped")
+            print("[OK] Bot stopped")
     else:
-        print(f"\n✗ Failed to start bot: {data.get('message', 'unknown')}")
+        print(f"\n[ERROR] Failed to start bot: {data.get('message', 'unknown')}")
         sys.exit(1)
         
 except Exception as e:
-    print(f"\n✗ Error: {e}")
+    print(f"\n[ERROR] Error: {e}")
     sys.exit(1)
