@@ -1,6 +1,6 @@
 # FutureTestBot
 
-This project is an automated cryptocurrency trading bot for Binance Futures targeting pairs like ADAUSDT, ATOMUSDT, AVAXUSDT, BCHUSDT, BNBUSDT, with capabilities for machine learning model training and prediction, backtesting strategies against historical data, a web server/API backend, real-time data streaming via WebSockets, automated notifications and alerts.
+This repository hosts a sophisticated automated cryptocurrency trading bot designed for Binance Futures. It features a comprehensive backend with multiple advanced machine learning models (including LSTM and enhanced crypto models) for predictive analysis and adaptive strategy training. The bot supports various trading strategies, including core, advanced, and enhanced ML-driven approaches, and is capable of multi-symbol trading. It includes modules for real-time data downloading, backtesting against historical data, and a Flask-based web server/API for real-time data streaming via WebSockets, automated notifications, and alerts. The project emphasizes adaptive retraining, loss learning, and strategy optimization, as evidenced by dedicated guides and summaries.
 
 ## Tech Stack
 
