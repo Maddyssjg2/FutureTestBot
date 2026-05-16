@@ -40,6 +40,7 @@ def main():
     df_15m = client.get_klines(interval="15m", limit=1000)
     df_1h = client.get_klines(interval="1h", limit=1000)
     df_4h = client.get_klines(interval="4h", limit=250)
+    df_1d = client.get_klines(interval="1d", limit=120)
     
     print(f"✓ Downloaded {len(df_15m)} 15m candles")
     
@@ -54,8 +55,11 @@ def main():
     df_4h_df = pd.DataFrame(df_4h, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume',
                                        'close_time', 'quote_volume', 'trades', 'taker_buy_base',
                                        'taker_buy_quote', 'ignore'])
+    df_1d_df = pd.DataFrame(df_1d, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume',
+                                       'close_time', 'quote_volume', 'trades', 'taker_buy_base',
+                                       'taker_buy_quote', 'ignore'])
     
-    for df in [df_15m_df, df_1h_df, df_4h_df]:
+    for df in [df_15m_df, df_1h_df, df_4h_df, df_1d_df]:
         for col in ['open', 'high', 'low', 'close', 'volume']:
             df[col] = df[col].astype(float)
     
