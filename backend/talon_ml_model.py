@@ -1,6 +1,6 @@
 """
 Talon Sniper ML Model
-Enhanced ML model trained on Talon Sniper v1 signals with Heikin Ashi candles
+Enhanced ML model trained on Talon Sniper v1 signals
 """
 
 import json
@@ -18,7 +18,7 @@ from sklearn.preprocessing import StandardScaler
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 warnings.filterwarnings("ignore", message="invalid value encountered")
 
-from talon_sniper_strategy import TalonSniperStrategy, heikin_ashi, ema, tema, dema, atr
+from talon_sniper_strategy import TalonSniperStrategy, ema, tema, dema, atr
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -27,7 +27,7 @@ logger = logging.getLogger(__name__)
 class TalonMLModel:
     """
     ML Model trained on Talon Sniper v1 features
-    Uses Heikin Ashi candles and both signal components
+    Uses both signal components
     """
     
     def __init__(self):
@@ -113,16 +113,6 @@ class TalonMLModel:
         features['ema13'] = ema13
         features['ema13_slope'] = ema13.diff(2) / ema13
         features['price_vs_ema13'] = (close - ema13) / ema13
-        
-        # --- Heikin Ashi Specific Features ---
-        features['ha_body'] = ha_df['close'] - ha_df['open']
-        features['ha_body_pct'] = features['ha_body'] / (high - low + 1e-10)
-        features['ha_upper_wick'] = (high - ha_df[['open', 'close']].max(axis=1)) / (high - low + 1e-10)
-        features['ha_lower_wick'] = (ha_df[['open', 'close']].min(axis=1) - low) / (high - low + 1e-10)
-        
-        # Consecutive HA candles
-        features['ha_bullish'] = (ha_df['close'] > ha_df['open']).astype(int)
-        features['ha_consecutive'] = features['ha_bullish'].rolling(3).sum()
         
         # --- Price Action Features ---
         features['returns_1h'] = close.pct_change(1)
