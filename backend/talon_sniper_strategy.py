@@ -126,56 +126,6 @@ class StrategyConfig:
         )
 
 
-def rsi(series: pd.Series, period: int = 14) -> pd.Series:
-    delta = series.diff()
-    gain = (delta.where(delta > 0, 0)).rolling(window=period).mean()
-    loss = (-delta.where(delta < 0, 0)).rolling(window=period).mean()
-    rs = gain / loss
-    return 100 - (100 / (1 + rs))
-
-
-def macd(series: pd.Series, fast: int = 12, slow: int = 26, signal: int = 9) -> Tuple[pd.Series, pd.Series, pd.Series]:
-    ema_fast = ema(series, fast)
-    ema_slow = ema(series, slow)
-    macd_line = ema_fast - ema_slow
-    signal_line = ema(macd_line, signal)
-    histogram = macd_line - signal_line
-    return macd_line, signal_line, histogram
-
-
-def bollinger_bands(series: pd.Series, period: int = 20, std_dev: float = 2.0) -> Tuple[pd.Series, pd.Series, pd.Series]:
-    middle = series.rolling(window=period).mean()
-    std = series.rolling(window=period).std()
-    upper = middle + (std * std_dev)
-    lower = middle - (std * std_dev)
-    return upper, middle, lower
-
-
-def volume_ratio(df: pd.DataFrame, period: int = 20) -> float:
-    if len(df) < period or 'volume' not in df.columns:
-        return 1.0
-    current_vol = df['volume'].iloc[-1]
-    vol_ma = df['volume'].rolling(window=period).mean().iloc[-1]
-    return current_vol / vol_ma if vol_ma > 0 else 1.0
-
-
-def market_regime(df: pd.DataFrame) -> str:
-    if len(df) < 50:
-        return 'unknown'
-    atr_val = atr(df, 14)
-    atr_pct = atr_val / df['close'] * 100
-    upper, middle, lower = bollinger_bands(df['close'])
-    bb_width = (upper - lower) / middle * 100
-    avg_atr_pct = atr_pct.iloc[-20:].mean()
-    avg_bb_width = bb_width.iloc[-20:].mean()
-    if avg_atr_pct > 5:
-        return 'volatile'
-    elif avg_bb_width < 3:
-        return 'ranging'
-    else:
-        return 'trending'
-
-
 class TalonSniperStrategy:
     def __init__(self, risk_config: dict, use_adaptive_params: bool = True, symbol: str = None):
         self.risk_config = risk_config
@@ -186,15 +136,19 @@ class TalonSniperStrategy:
         self._prev_trend: int = 0
         self.config = self._load_config()
 
+    @staticmethod
+    def _default_config() -> StrategyConfig:
+        return StrategyConfig()
+
     def _load_config(self) -> StrategyConfig:
         try:
             if self.use_adaptive_params:
                 from loss_learning_engine import get_adaptive_params
                 return StrategyConfig.from_adaptive_params(get_adaptive_params())
-            return StrategyConfig()
+            return self._default_config()
         except Exception as e:
             logger.warning(f"Could not load adaptive params: {e}, using defaults")
-            return StrategyConfig()
+            return self._default_config()
 
     def calculate_signal1(self, df: pd.DataFrame) -> Tuple[bool, bool, Dict]:
         close = df['close']
@@ -243,18 +197,18 @@ class TalonSniperStrategy:
         details = {'trend': trend.iloc[-1], 'trend_up': trend_up.iloc[-1], 'trend_down': trend_down.iloc[-1], 'atr': atr_val.iloc[-1], 'enter_long': bool(enter_long.iloc[-1]), 'enter_short': bool(enter_short.iloc[-1])}
         return int(trend.iloc[-1]), details
 
-    def calculate_trend_filter(self, df: pd.DataFrame) -> Tuple[str, float]:
-        ema13 = ema(df['close'], self.config.trend_ema_period)
-        if len(ema13) < 3:
-            return 'neutral', ema13.iloc[-1] if len(ema13) > 0 else 0
-        current = ema13.iloc[-1]
-        prev2 = ema13.iloc[-3] if len(ema13) >= 3 else ema13.iloc[0]
-        return ('up', current) if current >= prev2 else ('down', current)
+    def calculate_trend_filter(self, df: pd.DataFrame) -> Tuple[str, pd.Series]:
+        ema_13 = ema(df['close'], self.config.trend_ema_period)
+        if len(ema_13) < 2:
+            return 'neutral', ema_13
+        if ema_13.iloc[-1] > ema_13.iloc[-2]:
+            return 'up', ema_13
+        elif ema_13.iloc[-1] < ema_13.iloc[-2]:
+            return 'down', ema_13
+        return 'neutral', ema_13
 
-    def calculate_quality_score(self, df: pd.DataFrame, is_call: bool, is_put: bool, trend2: int, trend_filter: str, signal2_enter: bool = False) -> Tuple[float, Dict]:
-        if not is_call and not is_put and not signal2_enter:
-            return 0.0, {}
-        score = 50.0
+    def calculate_quality_score(self, df: pd.DataFrame, is_call: bool, is_put: bool, trend2: int, trend_filter: str, signal2_enter: bool) -> Tuple[float, Dict]:
+        score = 50
         details = {}
         ema_21 = ema(df['close'], 21)
         ema_55 = ema(df['close'], 55)
