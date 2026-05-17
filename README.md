@@ -1,11 +1,11 @@
 # FutureTestBot
 
-A mixed Node.js and Python trading-pattern workspace with a small CLI demo, backend trading utilities, and a React frontend scaffold.
+FutureTestBot is a mixed JavaScript, React, and Python workspace for trading automation experiments, dashboard UI work, and CLI demos.
 
 ## What this repo contains
 
 - `src/` — Node.js CLI entrypoint for star pattern demos
-- `frontend/` — React app scaffold for the dashboard UI
+- `frontend/` — React dashboard scaffold for trading status and controls
 - `backend/` — Python trading and strategy utilities
 - project docs and helper scripts for setup and experimentation
 
