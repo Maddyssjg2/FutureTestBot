@@ -1,71 +1,34 @@
-# star-patterns-js
+# FutureTestBot
 
-A beginner-friendly Node.js command-line project that prints **15+ star patterns** from a simple interactive menu.
+A JavaScript/Node.js repository with a small CLI pattern demo and a React/Next.js-style frontend workspace.
 
-## Features
+## What this repo contains
 
-- Menu-driven CLI for easy pattern selection
-- 15+ classic star pattern programs
-- Beginner-friendly, dependency-free Node.js code
-- Clear pattern names and reusable functions
-- Polished documentation for quick setup and use
-
-## Requirements
-
-- Node.js 16 or newer
+- `src/` — Node.js CLI entrypoint for star pattern demos
+- `frontend/` — React app scaffold for the dashboard UI
+- project docs and helper scripts for setup and experimentation
 
 ## Getting Started
 
-```bash
-git clone https://github.com/Maddyssjg2/star-patterns-js.git
-cd star-patterns-js
-npm start
-```
-
-## Usage
-
-Run the CLI:
+### Node.js CLI
 
 ```bash
 npm start
 ```
 
-Then choose a pattern number from the menu.
+### Frontend
 
-## Included Patterns
-
-1. Right Triangle
-2. Left Triangle
-3. Pyramid
-4. Inverted Pyramid
-5. Diamond
-6. Hollow Square
-7. Hollow Pyramid
-8. Hourglass
-9. Butterfly
-10. X Pattern
-11. Plus Pattern
-12. Right Pascal Triangle
-13. Left Pascal Triangle
-14. Sandglass
-15. Heart
-16. Numbered Star Pyramid
-
-## Project Structure
-
-```text
-star-patterns-js/
-├── package.json
-├── README.md
-└── src/
-    └── index.js
+```bash
+cd frontend
+npm install
+npm start
 ```
 
-## Notes for Beginners
+## Notes
 
-- Each pattern is implemented as a separate function.
-- The CLI uses Node's built-in `readline` module, so no extra packages are needed.
-- You can add more patterns by creating a new function and adding it to the `patterns` array.
+- The repository is organized as a mixed Node.js + frontend workspace.
+- The frontend uses React tooling and can be extended with Next.js-style documentation and structure if needed.
+- The CLI is dependency-free and runs with built-in Node.js modules.
 
 ## License
 
