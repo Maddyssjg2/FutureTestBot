@@ -182,7 +182,8 @@ def manual_trade():
 
 @app.route('/api/close-all', methods=['POST'])
 def close_all():
-    count = bot.close_all_positions()
+    bot_instance = get_multi_bot()
+    count = bot_instance.close_all_positions()
     return jsonify({'success': True, 'closed_positions': count})
 
 @app.route('/api/config', methods=['GET'])
