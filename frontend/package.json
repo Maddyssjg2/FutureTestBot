@@ -1,37 +1,17 @@
 {
-  "name": "binance-futures-dashboard",
+  "name": "js-star-patterns",
   "version": "1.0.0",
-  "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "socket.io-client": "^4.7.2",
-    "recharts": "^2.8.0",
-    "axios": "^1.5.0",
-    "lucide-react": "^0.284.0"
-  },
+  "description": "A beginner-friendly Node.js repository that demonstrates simple star patterns in separate files.",
+  "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node index.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "star-patterns",
+    "beginners"
+  ],
+  "author": "",
+  "license": "MIT"
 }
