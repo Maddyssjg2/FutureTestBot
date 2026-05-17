@@ -19,7 +19,6 @@
   animation: pulse 1.5s infinite;
 }
 
-/* Header */
 .header {
   background: rgba(15, 23, 42, 0.95);
   backdrop-filter: blur(10px);
@@ -43,6 +42,13 @@
   font-size: 1.25rem;
   font-weight: 600;
   color: #f8fafc;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: #94a3b8;
+  font-size: 0.875rem;
 }
 
 .logo {
@@ -89,7 +95,6 @@
   50% { opacity: 0.5; }
 }
 
-/* Buttons */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -108,14 +113,12 @@
 .btn.danger { background: #ef4444; color: white; }
 .btn.warning { background: #f59e0b; color: white; }
 
-/* Main Content */
 .main {
   padding: 24px;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* Alerts */
 .alert {
   display: flex;
   align-items: center;
@@ -132,7 +135,6 @@
   color: #fca5a5;
 }
 
-/* Stats Grid */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -210,11 +212,15 @@
 .panel-header h2 {
   font-size: 1.1rem;
   color: #f8fafc;
+  margin: 0;
 }
 
 .panel-body p {
   margin: 8px 0;
   color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .bot-controls {
