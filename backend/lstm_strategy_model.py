@@ -105,7 +105,7 @@ class LSTMStrategyModel:
         
         return model
     
-    def prepare_data(self, df_15m: pd.DataFrame, df_1h: pd.DataFrame, df_4h: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
+    def prepare_data(self, df_5m: pd.DataFrame, df_15m: pd.DataFrame, df_1h: pd.DataFrame, df_4h: pd.DataFrame) -> Tuple[np.ndarray, np.ndarray]:
         """Prepare sequences for LSTM training"""
         logger.info(f"[{self.symbol}] Preparing LSTM data...")
         
@@ -116,6 +116,7 @@ class LSTMStrategyModel:
             if i < 60:
                 continue
             
+            window_5m = df_5m.iloc[max(0, i*3-180):i*3].copy() if len(df_5m) > 0 else df_5m.copy()
             window_15m = df_15m.iloc[i-60:i].copy()
             idx_1h = min(i // 4, len(df_1h) - 1)
             idx_4h = min(i // 16, len(df_4h) - 1)
@@ -155,6 +156,20 @@ class LSTMStrategyModel:
             
             # Multi-timeframe features
             close_price = close[-1]
+            if len(window_5m) > 0:
+                close_5m = window_5m['close'].values
+                high_5m = window_5m['high'].values
+                low_5m = window_5m['low'].values
+                volume_5m = window_5m['volume'].values
+                five_min_return = (close_5m[-1] - close_5m[-2]) / close_5m[-2] if len(close_5m) >= 2 else 0
+                five_min_volatility = np.std(np.diff(close_5m) / close_5m[:-1]) if len(close_5m) > 1 else 0
+                five_min_range = (high_5m[-1] - low_5m[-1]) / close_5m[-1] if len(close_5m) > 0 else 0
+                five_min_volume_ratio = volume_5m[-1] / np.mean(volume_5m[-20:]) if len(volume_5m) >= 20 else 1
+            else:
+                five_min_return = 0
+                five_min_volatility = 0
+                five_min_range = 0
+                five_min_volume_ratio = 1
             
             feature_vector = [
                 # Price action (4)
@@ -162,6 +177,12 @@ class LSTMStrategyModel:
                 (close[-1] - close[-5]) / close[-5],  # 5-period return
                 volatility,
                 (high[-1] - low[-1]) / close[-1],  # Range
+                
+                # 5m candle window features (4)
+                five_min_return,
+                five_min_volatility,
+                five_min_range,
+                five_min_volume_ratio,
                 
                 # EMAs (4)
                 ema8 / close_price - 1,
@@ -232,14 +253,14 @@ class LSTMStrategyModel:
         
         return np.array(X), np.array(y)
     
-    def train(self, df_15m: pd.DataFrame, df_1h: pd.DataFrame, df_4h: pd.DataFrame) -> Dict:
+    def train(self, df_5m: pd.DataFrame, df_15m: pd.DataFrame, df_1h: pd.DataFrame, df_4h: pd.DataFrame) -> Dict:
         """Train LSTM model"""
         logger.info(f"\n{'='*60}")
         logger.info(f"Training LSTM Model for {self.symbol}")
         logger.info(f"{'='*60}")
         
         # Prepare data
-        X, y = self.prepare_data(df_15m, df_1h, df_4h)
+        X, y = self.prepare_data(df_5m, df_15m, df_1h, df_4h)
         
         if len(X) < 100:
             logger.warning(f"[{self.symbol}] Insufficient data for LSTM training")
@@ -344,7 +365,7 @@ class LSTMBacktester:
         self.initial_balance = initial_balance
         self.model = LSTMStrategyModel(symbol)
     
-    def download_historical_data(self, days: int = 90) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    def download_historical_data(self, days: int = 90) -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         """Download extensive historical data for backtesting"""
         logger.info(f"[{self.symbol}] Downloading {days} days of historical data...")
         
@@ -352,10 +373,12 @@ class LSTMBacktester:
         client.symbol = self.symbol
         
         # Calculate required candles
+        candles_5m = days * 24 * 12  # 5m candles
         candles_15m = days * 24 * 4  # 15m candles
         candles_1h = days * 24       # 1h candles
         candles_4h = days * 6          # 4h candles
         
+        klines_5m = client.get_klines(interval="5m", limit=min(candles_5m, 1000))
         klines_15m = client.get_klines(interval="15m", limit=min(candles_15m, 1000))
         klines_1h = client.get_klines(interval="1h", limit=min(candles_1h, 1000))
         klines_4h = client.get_klines(interval="4h", limit=min(candles_4h, 1000))
@@ -371,7 +394,7 @@ class LSTMBacktester:
             df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
             return df
         
-        return klines_to_df(klines_15m), klines_to_df(klines_1h), klines_to_df(klines_4h)
+        return klines_to_df(klines_5m), klines_to_df(klines_15m), klines_to_df(klines_1h), klines_to_df(klines_4h)
     
     def run_backtest(self, df_15m: pd.DataFrame, df_1h: pd.DataFrame, df_4h: pd.DataFrame,
                      min_confidence: float = 0.6, use_strategies: bool = True) -> BacktestResult:
@@ -545,11 +568,11 @@ class LSTMTrainer:
                 backtester = LSTMBacktester(symbol)
                 
                 # Download data
-                df_15m, df_1h, df_4h = backtester.download_historical_data(self.backtest_days)
+                df_5m, df_15m, df_1h, df_4h = backtester.download_historical_data(self.backtest_days)
                 
                 # Train model
                 model = LSTMStrategyModel(symbol)
-                train_result = model.train(df_15m, df_1h, df_4h)
+                train_result = model.train(df_5m, df_15m, df_1h, df_4h)
                 
                 if train_result['success']:
                     # Run backtest
