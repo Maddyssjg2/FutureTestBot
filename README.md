@@ -36,7 +36,7 @@ python app.py
 ## Notes
 
 - The repository is organized as a mixed Node.js + frontend + Python workspace.
-- The frontend uses React tooling and can be extended as needed.
+- The frontend uses React tooling and now includes a refreshed dashboard layout for trading status, controls, and signal summaries.
 - The CLI is dependency-free and runs with built-in Node.js modules.
 
 ## License
