@@ -1,0 +1,19 @@
+{
+  "name": "star-patterns-js",
+  "version": "1.0.0",
+  "description": "Beginner-friendly Node.js CLI for 15+ star pattern programs.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "nodejs",
+    "cli",
+    "patterns",
+    "stars",
+    "beginner-friendly"
+  ],
+  "author": "Eigenbird",
+  "license": "MIT"
+}
