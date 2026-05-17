@@ -110,19 +110,16 @@ function App() {
     fetchStatus();
     fetchSymbols();
 
-    // Fetch initial balance
     fetch(`${API_BASE}/api/balance`)
       .then(r => r.json())
       .then(data => { if (data && data.total !== undefined) setBalance(data); })
       .catch(() => {});
 
-    // Fetch initial positions
     fetch(`${API_BASE}/api/positions`)
       .then(r => r.json())
       .then(data => { if (Array.isArray(data)) setPositions(data); })
       .catch(() => {});
 
-    // Fetch initial orders
     fetch(`${API_BASE}/api/orders`)
       .then(r => r.json())
       .then(data => { if (Array.isArray(data)) setOrders(data); })
@@ -218,297 +215,45 @@ function App() {
     <div className="app">
       <header className="header">
         <div className="header-left">
-          <BarChart3 size={28} className="logo" />
-          <h1>Binance Futures Multi Bot</h1>
-          <span className="badge paper">PAPER TRADING</span>
-          {config?.risk_level && (
-            <span className={`badge ${config.risk_level}`}>
-              {config.risk_level.toUpperCase()} RISK
-            </span>
-          )}
-          <span className="badge multi">
-            MULTI ({multiBotStatus?.symbols_monitored || config?.default_multi_symbol_count || 0} pairs)
-          </span>
+          <Activity className="logo" size={24} />
+          <h1>FutureTestBot Dashboard</h1>
         </div>
         <div className="header-right">
           <div className={`status-indicator ${connected ? 'online' : 'offline'}`}>
-            <div className="dot"></div>
-            <span>{connected ? 'Connected' : 'Disconnected'}</span>
+            <span className="dot" />
+            {connected ? 'Connected' : 'Disconnected'}
           </div>
-          <div className="bot-controls">
-            <button
-              className={`btn ${botRunning ? 'danger' : 'success'}`}
-              onClick={() => (botRunning ? stopBot() : startBot())}
-            >
-              {botRunning ? <><Square size={16} /> Stop Bot</> : <><Play size={16} /> Start Bot</>}
-            </button>
+          <div className={`badge ${botRunning ? 'low' : 'high'}`}>
+            {botRunning ? 'Running' : 'Stopped'}
           </div>
         </div>
       </header>
-
-      {error && (
-        <div className="alert error">
-          <AlertTriangle size={16} />
-          {error}
-        </div>
-      )}
-
       <main className="main">
-        <div className="stats-grid">
-          <div className="card stat">
-            <div className="stat-icon wallet">
-              <Wallet size={24} />
-            </div>
-            <div className="stat-content">
-              <span className="stat-label">Total Balance</span>
-              <span className="stat-value">${balance ? balance.total.toFixed(2) : '0.00'} USDT</span>
-            </div>
-          </div>
-
-          <div className="card stat">
-            <div className="stat-icon available">
-              <DollarSign size={24} />
-            </div>
-            <div className="stat-content">
-              <span className="stat-label">Available</span>
-              <span className="stat-value">${balance ? balance.available.toFixed(2) : '0.00'} USDT</span>
+        {error && <div className="alert error"><AlertTriangle size={16} />{error}</div>}
+        <section className="stats-grid">
+          <div className="card stat"><Wallet className="stat-icon wallet" /><div className="stat-content"><span className="stat-label">Balance</span><span className="stat-value">{balance?.total ?? '-'}</span></div></div>
+          <div className="card stat"><TrendingUp className="stat-icon available" /><div className="stat-content"><span className="stat-label">Positions</span><span className="stat-value">{positions.length}</span></div></div>
+          <div className="card stat"><DollarSign className="stat-icon price" /><div className="stat-content"><span className="stat-label">Price</span><span className="stat-value">{currentPrice || '-'}</span></div></div>
+          <div className="card stat"><Shield className="stat-icon profit" /><div className="stat-content"><span className="stat-label">Last Signal</span><span className="stat-value">{lastSignal?.signal || '-'}</span></div></div>
+        </section>
+        <section className="card panel">
+          <div className="panel-header">
+            <h2>Trading Controls</h2>
+            <div className="bot-controls">
+              <button className="btn success" onClick={startBot}><Play size={16} />Start</button>
+              <button className="btn danger" onClick={stopBot}><Square size={16} />Stop</button>
+              <button className="btn warning" onClick={closeAllPositions}><AlertTriangle size={16} />Close All</button>
             </div>
           </div>
-
-          <div className="card stat">
-            <div className={`stat-icon ${(balance?.unrealized_pnl || 0) >= 0 ? 'profit' : 'loss'}`}>
-              {(balance?.unrealized_pnl || 0) >= 0 ? <TrendingUp size={24} /> : <TrendingDown size={24} />}
-            </div>
-            <div className="stat-content">
-              <span className="stat-label">Unrealized P&amp;L</span>
-              <span className={`stat-value ${(balance?.unrealized_pnl || 0) >= 0 ? 'profit' : 'loss'}`}>
-                {balance?.unrealized_pnl >= 0 ? '+' : ''}${balance ? balance.unrealized_pnl.toFixed(2) : '0.00'}
-              </span>
-            </div>
+          <div className="panel-body">
+            <p>Selected symbol: {selectedSymbol}</p>
+            <p>Available symbols: {availableSymbols.length}</p>
+            <p>Last signal time: {formatTime(lastSignal?.timestamp)}</p>
           </div>
-
-          <div className="card stat">
-            <div className="stat-icon price">
-              <Activity size={24} />
-            </div>
-            <div className="stat-content">
-              <span className="stat-label">{selectedSymbol}</span>
-              <span className="stat-value">
-                ${currentPrice.toLocaleString(undefined, { minimumFractionDigits: 2 })}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="content-grid">
-          <div className="card bot-status">
-            <div className="card-header">
-              <h3>Bot Status</h3>
-              <span className={`status-badge ${botRunning ? 'active' : 'inactive'}`}>
-                {botRunning ? 'Running' : 'Stopped'}
-              </span>
-            </div>
-            <div className="status-content">
-              <div className="status-item">
-                <span className="status-label">Monitored Symbols</span>
-                <span className="status-value">{multiBotStatus?.symbols_monitored || 0}</span>
-              </div>
-              <div className="status-item">
-                <span className="status-label">Total Trades</span>
-                <span className="status-value">{multiBotStatus?.total_trades || 0}</span>
-              </div>
-              <div className="status-item">
-                <span className="status-label">Win Rate</span>
-                <span className={`status-value ${(multiBotStatus?.win_rate || 0) >= 70 ? 'profit' : (multiBotStatus?.win_rate || 0) >= 50 ? 'neutral' : 'loss'}`}>
-                  {multiBotStatus?.win_rate?.toFixed(1) || 0}%
-                </span>
-              </div>
-              <div className="status-item">
-                <span className="status-label">Wins / Losses</span>
-                <span className="status-value">
-                  <span className="profit">{multiBotStatus?.winning_trades || 0}</span>
-                  {' / '}
-                  <span className="loss">{multiBotStatus?.losing_trades || 0}</span>
-                </span>
-              </div>
-              <div className="status-item">
-                <span className="status-label">Open Positions</span>
-                <span className="status-value">{multiBotStatus?.open_positions || 0}</span>
-              </div>
-
-              {lastSignal && (
-                <div className="last-signal">
-                  <h4>Latest Signal ({lastSignal.symbol})</h4>
-                  <div className={`signal-box ${lastSignal.signal?.toLowerCase() || 'neutral'}`}>
-                    <span className="signal-type">{lastSignal.signal || 'NONE'}</span>
-                    <span className="signal-confidence">{lastSignal.confidence?.toFixed(1) || 0}% Confidence</span>
-                    <span className="signal-time">{formatTime(lastSignal.timestamp)}</span>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-
-        <div className="card multi-status">
-          <div className="card-header">
-            <h3>Signals by Symbol</h3>
-            <span className={`status-badge ${botRunning ? 'active' : 'inactive'}`}>
-              {botRunning ? 'Live' : 'Idle'}
-            </span>
-          </div>
-          <div className="multi-symbols">
-            {multiBotStatus?.last_signals && Object.entries(multiBotStatus.last_signals).map(([symbol, data]) => (
-              <div key={symbol} className={`symbol-pill ${data.signal?.toLowerCase() || 'neutral'}`}>
-                <span className="symbol-name">{symbol}</span>
-                {data.signal && (
-                  <>
-                    <span className="symbol-signal">{data.signal}</span>
-                    <span className="symbol-conf">{data.confidence?.toFixed(0)}%</span>
-                  </>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="content-grid">
-          <div className="card">
-            <div className="card-header">
-              <h3>Open Positions ({positions.length})</h3>
-              {positions.length > 0 && (
-                <button className="btn danger small" onClick={closeAllPositions}>
-                  Close All
-                </button>
-              )}
-            </div>
-            <div className="table-container">
-              {positions.length === 0 ? (
-                <div className="empty-state">
-                  <Shield size={48} />
-                  <p>No open positions</p>
-                </div>
-              ) : (
-                <table className="data-table">
-                  <thead>
-                    <tr>
-                      <th>Symbol</th>
-                      <th>Side</th>
-                      <th>Size</th>
-                      <th>Entry Price</th>
-                      <th>Mark Price</th>
-                      <th>P&amp;L</th>
-                      <th>Leverage</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {positions.map((pos, idx) => (
-                      <tr key={idx}>
-                        <td>{pos.symbol}</td>
-                        <td className={pos.side === 'LONG' ? 'profit' : 'loss'}>{pos.side}</td>
-                        <td>{pos.amount.toFixed(4)}</td>
-                        <td>${pos.entry_price.toFixed(2)}</td>
-                        <td>${pos.mark_price.toFixed(2)}</td>
-                        <td className={pos.unrealized_pnl >= 0 ? 'profit' : 'loss'}>
-                          {pos.unrealized_pnl >= 0 ? '+' : ''}${pos.unrealized_pnl.toFixed(2)}
-                        </td>
-                        <td>{pos.leverage}x</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              )}
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="card-header">
-              <h3>Recent Orders</h3>
-            </div>
-            <div className="table-container">
-              {orders.length === 0 ? (
-                <div className="empty-state">
-                  <Clock size={48} />
-                  <p>No recent orders</p>
-                </div>
-              ) : (
-                <table className="data-table">
-                  <thead>
-                    <tr>
-                      <th>Time</th>
-                      <th>Symbol</th>
-                      <th>Side</th>
-                      <th>Type</th>
-                      <th>Status</th>
-                      <th>Quantity</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {orders.slice(0, 10).map((order, idx) => (
-                      <tr key={idx}>
-                        <td>{formatTime(order.time)}</td>
-                        <td>{order.symbol}</td>
-                        <td className={order.side === 'BUY' ? 'profit' : 'loss'}>{order.side}</td>
-                        <td>{order.type}</td>
-                        <td>
-                          <span className={`order-status ${order.status.toLowerCase()}`}>
-                            {order.status}
-                          </span>
-                        </td>
-                        <td>{parseFloat(order.origQty).toFixed(4)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              )}
-            </div>
-          </div>
-        </div>
-
-        {config && (
-          <div className="card config-card">
-            <div className="card-header">
-              <h3>Trading Configuration</h3>
-            </div>
-            <div className="config-grid">
-              <div className="config-item">
-                <span className="config-label">Mode</span>
-                <span className="config-value">MULTI ONLY</span>
-              </div>
-              <div className="config-item">
-                <span className="config-label">Strategy</span>
-                <span className="config-value">{(config.strategy_mode || 'rule').toUpperCase()}</span>
-              </div>
-              <div className="config-item">
-                <span className="config-label">Leverage</span>
-                <span className="config-value">{config.leverage}x</span>
-              </div>
-              <div className="config-item">
-                <span className="config-label">Trade %</span>
-                <span className="config-value">{config.trade_percentage}%</span>
-              </div>
-              <div className="config-item">
-                <span className="config-label">Stop Loss</span>
-                <span className="config-value">{config.stop_loss}%</span>
-              </div>
-              <div className="config-item">
-                <span className="config-label">Take Profit</span>
-                <span className="config-value">{config.take_profit}%</span>
-              </div>
-            </div>
-          </div>
-        )}
+        </section>
       </main>
-
-      <footer className="footer">
-        <p>
-          <AlertTriangle size={14} />
-          Trading involves risk. This is paper trading on Binance Testnet.
-        </p>
-      </footer>
     </div>
   );
 }
 
 export default App;
-
