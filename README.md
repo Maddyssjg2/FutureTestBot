@@ -1,65 +1,72 @@
-# FutureTestBot
+# star-patterns-js
 
-This project is an automated cryptocurrency trading bot for Binance Futures targeting pairs like ADAUSDT, ATOMUSDT, AVAXUSDT, BCHUSDT, BNBUSDT, with capabilities for machine learning model training and prediction, backtesting strategies against historical data, a web server/API backend, real-time data streaming via WebSockets, automated notifications and alerts.
+A beginner-friendly Node.js command-line project that prints **15+ star patterns** from a simple interactive menu.
 
-## Tech Stack
+## Features
 
-- AdaptiveMLTrainer
-- AverageTrueRange
-- Binance API
-- BinanceAPIException
-- BinanceFuturesClient
-- CORS
-- Client
-- Config
-- DataDownloader
-- Decimal
-- Dict
-- EMAIndicator
-- EnhancedCryptoModel
-- Enum
-- Flask
-- Flask-CORS
-- Flask-SocketIO
-- JSON
-- MultiSymbolBot
-- NumPy
-- OnBalanceVolumeIndicator
-- Optional
-- Pandas
-- Python Logging
-- RSIIndicator
-- RandomForestClassifier
-- Scikit-learn
-- Socket.IO
-- StandardScaler
-- TalonMLModel
-- TradePerformanceAnalyzer
-- TradingStrategy
-- advanced_strategies
-- binance_client
-- candidate
-- candles_to_dataframe
-- config
-- data_downloader
-- dataclass
-- dataclasses
-- decimal
-- dotenv
-- enhanced_crypto_model
-- enum
-- load_dotenv
-- multi_symbol_bot
-- performance_analyzer
-- pickle
-- premium_model
-- talon_ml_model
-- technical
-- threading
-- trading_strategy
-- train_test_split
-- typing
-- warnings
+- Menu-driven CLI for easy pattern selection
+- 15+ classic star pattern programs
+- Beginner-friendly, dependency-free Node.js code
+- Clear pattern names and reusable functions
+- Polished documentation for quick setup and use
+
+## Requirements
+
+- Node.js 16 or newer
 
 ## Getting Started
 
+```bash
+git clone https://github.com/Maddyssjg2/star-patterns-js.git
+cd star-patterns-js
+npm start
+```
+
+## Usage
+
+Run the CLI:
+
+```bash
+npm start
+```
+
+Then choose a pattern number from the menu.
+
+## Included Patterns
+
+1. Right Triangle
+2. Left Triangle
+3. Pyramid
+4. Inverted Pyramid
+5. Diamond
+6. Hollow Square
+7. Hollow Pyramid
+8. Hourglass
+9. Butterfly
+10. X Pattern
+11. Plus Pattern
+12. Right Pascal Triangle
+13. Left Pascal Triangle
+14. Sandglass
+15. Heart
+16. Numbered Star Pyramid
+
+## Project Structure
+
+```text
+star-patterns-js/
+├── package.json
+├── README.md
+└── src/
+    └── index.js
+```
+
+## Notes for Beginners
+
+- Each pattern is implemented as a separate function.
+- The CLI uses Node's built-in `readline` module, so no extra packages are needed.
+- You can add more patterns by creating a new function and adding it to the `patterns` array.
+
+## License
+
+MIT
