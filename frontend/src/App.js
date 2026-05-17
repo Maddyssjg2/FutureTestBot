@@ -1,8 +1,8 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { io } from 'socket.io-client';
 import {
-  Play, Square, Wallet, TrendingUp, TrendingDown,
-  Activity, BarChart3, Clock, Shield, AlertTriangle, DollarSign
+  Play, Square, Wallet, TrendingUp, Activity, Clock,
+  AlertTriangle, DollarSign, Server, Signal, Layers
 } from 'lucide-react';
 import './App.css';
 
@@ -19,6 +19,20 @@ function pickLatestSignal(lastSignals) {
     }
   }
   return latest;
+}
+
+function StatCard({ icon: Icon, label, value, tone }) {
+  return (
+    <div className="card stat">
+      <div className={`stat-icon ${tone}`}>
+        <Icon size={22} />
+      </div>
+      <div className="stat-content">
+        <span className="stat-label">{label}</span>
+        <span className="stat-value">{value}</span>
+      </div>
+    </div>
+  );
 }
 
 function App() {
@@ -81,14 +95,8 @@ function App() {
   useEffect(() => {
     const newSocket = io(SOCKET_URL);
 
-    newSocket.on('connect', () => {
-      setConnected(true);
-    });
-
-    newSocket.on('disconnect', () => {
-      setConnected(false);
-    });
-
+    newSocket.on('connect', () => setConnected(true));
+    newSocket.on('disconnect', () => setConnected(false));
     newSocket.on('market_update', (data) => {
       if (data.balance) setBalance(data.balance);
       if (data.positions) setPositions(data.positions);
@@ -110,41 +118,19 @@ function App() {
     fetchStatus();
     fetchSymbols();
 
-    fetch(`${API_BASE}/api/balance`)
-      .then(r => r.json())
-      .then(data => { if (data && data.total !== undefined) setBalance(data); })
-      .catch(() => {});
+    fetch(`${API_BASE}/api/balance`).then(r => r.json()).then(data => { if (data && data.total !== undefined) setBalance(data); }).catch(() => {});
+    fetch(`${API_BASE}/api/positions`).then(r => r.json()).then(data => { if (Array.isArray(data)) setPositions(data); }).catch(() => {});
+    fetch(`${API_BASE}/api/orders`).then(r => r.json()).then(data => { if (Array.isArray(data)) setOrders(data); }).catch(() => {});
 
-    fetch(`${API_BASE}/api/positions`)
-      .then(r => r.json())
-      .then(data => { if (Array.isArray(data)) setPositions(data); })
-      .catch(() => {});
-
-    fetch(`${API_BASE}/api/orders`)
-      .then(r => r.json())
-      .then(data => { if (Array.isArray(data)) setOrders(data); })
-      .catch(() => {});
-
-    return () => {
-      newSocket.close();
-    };
+    return () => newSocket.close();
   }, [SOCKET_URL, API_BASE]);
 
   useEffect(() => {
     const statusInterval = setInterval(fetchStatus, 5000);
     const balanceInterval = setInterval(() => {
-      fetch(`${API_BASE}/api/balance`)
-        .then(r => r.json())
-        .then(data => { if (data && data.total !== undefined) setBalance(data); })
-        .catch(() => {});
-      fetch(`${API_BASE}/api/positions`)
-        .then(r => r.json())
-        .then(data => { if (Array.isArray(data)) setPositions(data); })
-        .catch(() => {});
-      fetch(`${API_BASE}/api/orders`)
-        .then(r => r.json())
-        .then(data => { if (Array.isArray(data)) setOrders(data); })
-        .catch(() => {});
+      fetch(`${API_BASE}/api/balance`).then(r => r.json()).then(data => { if (data && data.total !== undefined) setBalance(data); }).catch(() => {});
+      fetch(`${API_BASE}/api/positions`).then(r => r.json()).then(data => { if (Array.isArray(data)) setPositions(data); }).catch(() => {});
+      fetch(`${API_BASE}/api/orders`).then(r => r.json()).then(data => { if (Array.isArray(data)) setOrders(data); }).catch(() => {});
     }, 10000);
     return () => { clearInterval(statusInterval); clearInterval(balanceInterval); };
   }, [API_BASE]);
@@ -189,9 +175,7 @@ function App() {
     try {
       const response = await fetch(`${API_BASE}/api/close-all`, { method: 'POST' });
       const data = await response.json();
-      if (data.success) {
-        alert(`Closed ${data.closed_positions} positions`);
-      }
+      if (data.success) alert(`Closed ${data.closed_positions} positions`);
     } catch (err) {
       setError('Failed to close positions');
     }
@@ -216,7 +200,10 @@ function App() {
       <header className="header">
         <div className="header-left">
           <Activity className="logo" size={24} />
-          <h1>FutureTestBot Dashboard</h1>
+          <div>
+            <h1>FutureTestBot Dashboard</h1>
+            <p className="subtitle">React/Node.js trading control center</p>
+          </div>
         </div>
         <div className="header-right">
           <div className={`status-indicator ${connected ? 'online' : 'offline'}`}>
@@ -228,14 +215,17 @@ function App() {
           </div>
         </div>
       </header>
+
       <main className="main">
         {error && <div className="alert error"><AlertTriangle size={16} />{error}</div>}
+
         <section className="stats-grid">
-          <div className="card stat"><Wallet className="stat-icon wallet" /><div className="stat-content"><span className="stat-label">Balance</span><span className="stat-value">{balance?.total ?? '-'}</span></div></div>
-          <div className="card stat"><TrendingUp className="stat-icon available" /><div className="stat-content"><span className="stat-label">Positions</span><span className="stat-value">{positions.length}</span></div></div>
-          <div className="card stat"><DollarSign className="stat-icon price" /><div className="stat-content"><span className="stat-label">Price</span><span className="stat-value">{currentPrice || '-'}</span></div></div>
-          <div className="card stat"><Shield className="stat-icon profit" /><div className="stat-content"><span className="stat-label">Last Signal</span><span className="stat-value">{lastSignal?.signal || '-'}</span></div></div>
+          <StatCard icon={Wallet} label="Balance" value={balance?.total ?? '-'} tone="wallet" />
+          <StatCard icon={TrendingUp} label="Positions" value={positions.length} tone="available" />
+          <StatCard icon={DollarSign} label="Price" value={currentPrice || '-'} tone="price" />
+          <StatCard icon={Signal} label="Last Signal" value={lastSignal?.signal || '-'} tone="profit" />
         </section>
+
         <section className="card panel">
           <div className="panel-header">
             <h2>Trading Controls</h2>
@@ -246,9 +236,11 @@ function App() {
             </div>
           </div>
           <div className="panel-body">
-            <p>Selected symbol: {selectedSymbol}</p>
-            <p>Available symbols: {availableSymbols.length}</p>
-            <p>Last signal time: {formatTime(lastSignal?.timestamp)}</p>
+            <p><Server size={14} /> Selected symbol: {selectedSymbol}</p>
+            <p><Layers size={14} /> Available symbols: {availableSymbols.length}</p>
+            <p><Clock size={14} /> Last signal time: {formatTime(lastSignal?.timestamp)}</p>
+            <p><Activity size={14} /> Orders tracked: {orders.length}</p>
+            <p><TrendingUp size={14} /> Multi-bot running: {multiBotStatus?.running ? 'Yes' : 'No'}</p>
           </div>
         </section>
       </main>
