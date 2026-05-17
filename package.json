@@ -1,7 +1,7 @@
 {
-  "name": "star-patterns-js",
+  "name": "futuretestbot",
   "version": "1.0.0",
-  "description": "Beginner-friendly Node.js CLI for 15+ star pattern programs.",
+  "description": "Mixed JavaScript/Node.js workspace for trading automation demos and React dashboard features.",
   "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
@@ -10,9 +10,9 @@
   "keywords": [
     "nodejs",
     "cli",
-    "patterns",
-    "stars",
-    "beginner-friendly"
+    "trading",
+    "react",
+    "dashboard"
   ],
   "author": "Eigenbird",
   "license": "MIT"
