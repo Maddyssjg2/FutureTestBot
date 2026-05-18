@@ -64,17 +64,24 @@ class SignalResult:
 
 @dataclass
 class StrategyConfig:
+    # Trend & Signal Periods
     trend_ema_period: int = 21
     signal1_fast: int = 5
     signal1_slow: int = 8
     signal2_factor: int = 1
     signal2_pd: int = 1
+
+    # Risk Management (ATR Multipliers)
     atr_sl_mult: float = 2.5
     atr_tp1_mult: float = 1.5
     atr_tp2_mult: float = 3.0
+
+    # Weights & Confirmation
     tema_dema_weight: float = 1.0
     signal_2_weight: float = 1.0
     require_signal_2_confirm: bool = True
+
+    # Filters & Thresholds
     min_confidence: int = 80
     max_atr_pct: float = 0.05
     volatility_filter: bool = True
@@ -85,30 +92,37 @@ class StrategyConfig:
     rsi_overbought: int = 60
     require_macd_confirm: bool = False
     min_histogram_strength: float = 0.05
+
+    # Metadata
     custom_strategy_name: str = 'Talon Sniper v2 Optimized 80% WR'
 
     @classmethod
     def from_adaptive_params(cls, params: Dict) -> "StrategyConfig":
-        return cls(
-            trend_ema_period=21 if params.get('ema_trend_filter') == 'ema_21' else 13,
-            atr_sl_mult=params.get('atr_multiplier_sl', 3.0),
-            atr_tp1_mult=params.get('atr_multiplier_tp1', 2.0),
-            atr_tp2_mult=params.get('atr_multiplier_tp2', 4.0),
-            tema_dema_weight=params.get('tema_dema_weight', 1.0),
-            signal_2_weight=params.get('signal_2_weight', 1.0),
-            require_signal_2_confirm=params.get('require_signal_2_confirm', True),
-            min_confidence=params.get('min_confidence', 90),
-            max_atr_pct=params.get('max_atr_pct', 0.04),
-            volatility_filter=params.get('volatility_filter', True),
-            trend_strength_min=params.get('trend_strength_min', 0.3),
-            volume_surge_boost=params.get('volume_surge_boost', 2.0),
-            min_quality_score=70,
-            rsi_oversold=40,
-            rsi_overbought=60,
-            require_macd_confirm=False,
-            min_histogram_strength=0.05,
-            custom_strategy_name=params.get('custom_strategy_name', 'Talon Sniper v2 Optimized 80% WR'),
-        )
+        # Map adaptive parameter keys to config fields
+        mapping = {
+            'atr_multiplier_sl': 'atr_sl_mult',
+            'atr_multiplier_tp1': 'atr_tp1_mult',
+            'atr_multiplier_tp2': 'atr_tp2_mult',
+            'tema_dema_weight': 'tema_dema_weight',
+            'signal_2_weight': 'signal_2_weight',
+            'require_signal_2_confirm': 'require_signal_2_confirm',
+            'min_confidence': 'min_confidence',
+            'max_atr_pct': 'max_atr_pct',
+            'volatility_filter': 'volatility_filter',
+            'trend_strength_min': 'trend_strength_min',
+            'volume_surge_boost': 'volume_surge_boost',
+            'custom_strategy_name': 'custom_strategy_name'
+        }
+
+        config_args = {}
+        for param_key, config_key in mapping.items():
+            if param_key in params:
+                config_args[config_key] = params[param_key]
+
+        # Special handling for trend EMA
+        config_args['trend_ema_period'] = 21 if params.get('ema_trend_filter') == 'ema_21' else 13
+
+        return cls(**config_args)
 
 
 def rsi(series: pd.Series, period: int = 14) -> pd.Series:
