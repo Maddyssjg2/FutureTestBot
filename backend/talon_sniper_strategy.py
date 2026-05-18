@@ -239,25 +239,8 @@ class TalonSniperStrategy:
     def calculate_quality_score(self, df: pd.DataFrame, is_call: bool, is_put: bool, trend2: int, trend_filter: str, signal2_enter: bool = False) -> Tuple[float, Dict]:
         if not is_call and not is_put:
             return 0.0, {'reason': 'no_signal'}
-        score = 50.0
-        details = {}
-        rsi_val = rsi(df['close']).iloc[-1]
-        details['rsi'] = rsi_val
-        if is_call and rsi_val < self.config.rsi_oversold:
-            score += 10
-        elif is_put and rsi_val > self.config.rsi_overbought:
-            score += 10
-        macd_line, signal_line, histogram = macd(df['close'])
-        details['macd_histogram'] = histogram.iloc[-1]
-        if len(histogram) > 9:
-            hist_current = histogram.iloc[-1]
-            hist_prev = histogram.iloc[-2]
-            if is_call and hist_current > 0 and hist_current > hist_prev:
-                score += 15
-            elif is_put and hist_current < 0 and hist_current < hist_prev:
-                score += 15
-            elif abs(hist_current) > self.config.min_histogram_strength:
-                score += 5
+        score = 50
+        details = {'rsi': rsi(df['close']).iloc[-1] if len(df) > 14 else 50}
         vol_ratio = volume_ratio(df)
         details['volume_ratio'] = vol_ratio
         if vol_ratio > 1.5:
