@@ -48,6 +48,30 @@ def highest(series: pd.Series, period: int) -> pd.Series:
 def lowest(series: pd.Series, period: int) -> pd.Series:
     return series.rolling(window=period).min()
 
+def heikin_ashi(df: pd.DataFrame) -> pd.DataFrame:
+    df_ha = df.copy()
+    close_ha = (df['open'] + df['high'] + df['low'] + df['close']) / 4
+    
+    ha_open = pd.Series(index=df.index, dtype=float)
+    ha_high = pd.Series(index=df.index, dtype=float)
+    ha_low = pd.Series(index=df.index, dtype=float)
+    ha_close = close_ha
+    
+    for i in range(len(df)):
+        if i == 0:
+            ha_open.iloc[i] = (df['open'].iloc[i] + df['close'].iloc[i]) / 2
+        else:
+            ha_open.iloc[i] = (ha_open.iloc[i-1] + ha_close.iloc[i-1]) / 2
+        
+        ha_high.iloc[i] = max(df['high'].iloc[i], ha_open.iloc[i], ha_close.iloc[i])
+        ha_low.iloc[i] = min(df['low'].iloc[i], ha_open.iloc[i], ha_close.iloc[i])
+    
+    df_ha['open'] = ha_open
+    df_ha['high'] = ha_high
+    df_ha['low'] = ha_low
+    df_ha['close'] = ha_close
+    return df_ha
+
 
 @dataclass
 class SignalResult:
@@ -293,15 +317,16 @@ class TalonSniperStrategy:
     def generate_signal(self, klines: List) -> SignalResult:
         try:
             df = pd.DataFrame(klines)
+            df_ha = heikin_ashi(df)
             if len(df) < 50:
                 return SignalResult(None, 0, 0, 0, 0, 0, 'none', {'error': 'insufficient_data'}, quality_score=0.0)
             for col in ['open', 'high', 'low', 'close', 'volume']:
                 if col in df.columns:
                     df[col] = pd.to_numeric(df[col], errors='coerce')
             current_price = float(df['close'].iloc[-1])
-            is_call, is_put, signal1_details = self.calculate_signal1(df)
-            trend2, signal2_details = self.calculate_signal2(df)
-            trend_filter, ema13 = self.calculate_trend_filter(df)
+            is_call, is_put, signal1_details = self.calculate_signal1(df_ha)
+            trend2, signal2_details = self.calculate_signal2(df_ha)
+            trend_filter, ema13 = self.calculate_trend_filter(df_ha)
             atr_val = atr(df, 14).iloc[-1]
             signal = None
             confidence = 0.0
