@@ -20,11 +20,14 @@ def ema(series: pd.Series, period: int) -> pd.Series:
     return series.ewm(span=period, adjust=False).mean()
 
 
-def tema(series: pd.Series, period: int = 1) -> pd.Series:
-    e1 = ema(series, period)
-    e2 = ema(e1, period)
-    e3 = ema(e2, period)
-    return 3 * e1 - 3 * e2 + e3
+def heikin_ashi(df: pd.DataFrame) -> pd.DataFrame:
+    """Calculates Heikin Ashi candles for OHLC data."""
+    df['ha_close'] = (df['open'] + df['high'] + df['low'] + df['close']) / 4
+    df['ha_open'] = (df['open'] + df['ha_close'].shift(1)) / 2
+    df['ha_high'] = max(df['high'], df['ha_open'], df['ha_close']) 
+    df['ha_low'] = min(df['low'], df['ha_open'], df['ha_close'])
+    return df[['ha_open', 'ha_high', 'ha_low', 'ha_close']]
+
 
 
 def dema(series: pd.Series, period: int) -> pd.Series:
