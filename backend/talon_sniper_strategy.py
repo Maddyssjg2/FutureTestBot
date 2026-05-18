@@ -1,8 +1,8 @@
 """
-Talon Sniper v2 Trading Strategy
-Based on TradingView Pine Script
+Heikin Ashi Sniper Strategy (SCRUM-130)
+Based on Heikin Ashi Candlestick Analysis
 
-Signal 1: TEMA/DEMA crossover with adaptive signal line
+Signal 1: Heikin Ashi trend confirmation
 Signal 2: ATR-based trend following with trailing stops
 Trend Filter: EMA 13 color (lime=uptrend, red=downtrend)
 """
