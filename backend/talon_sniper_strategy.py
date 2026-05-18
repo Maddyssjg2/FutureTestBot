@@ -237,27 +237,18 @@ class TalonSniperStrategy:
         return ('up', current) if current >= prev2 else ('down', current)
 
     def calculate_quality_score(self, df: pd.DataFrame, is_call: bool, is_put: bool, trend2: int, trend_filter: str, signal2_enter: bool = False) -> Tuple[float, Dict]:
-        if not is_call and not is_put and not signal2_enter:
-            return 0.0, {}
+        if not is_call and not is_put:
+            return 0.0, {'reason': 'no_signal'}
         score = 50.0
         details = {}
-        ema_21 = ema(df['close'], 21)
-        ema_55 = ema(df['close'], 55)
-        if len(ema_21) > 0 and len(ema_55) > 0:
-            trend_gap = abs(ema_21.iloc[-1] - ema_55.iloc[-1]) / df['close'].iloc[-1] * 100
-            trend_strength_score = min(trend_gap * 10, 20)
-            score += trend_strength_score
-            details['trend_strength'] = trend_gap
-            details['trend_strength_score'] = trend_strength_score
-        rsi_val = rsi(df['close'], 14).iloc[-1]
+        rsi_val = rsi(df['close']).iloc[-1]
         details['rsi'] = rsi_val
         if is_call and rsi_val < self.config.rsi_oversold:
-            score += 15
+            score += 10
         elif is_put and rsi_val > self.config.rsi_overbought:
-            score += 15
-        elif (is_call and 40 < rsi_val < 60) or (is_put and 40 < rsi_val < 60):
-            score += 5
-        _, _, histogram = macd(df['close'])
+            score += 10
+        macd_line, signal_line, histogram = macd(df['close'])
+        details['macd_histogram'] = histogram.iloc[-1]
         if len(histogram) > 9:
             hist_current = histogram.iloc[-1]
             hist_prev = histogram.iloc[-2]
