@@ -136,6 +136,26 @@ def bollinger_bands(series: pd.Series, period: int = 20, std_dev: float = 2.0) -
     return upper, middle, lower
 
 
+def heikin_ashi_candles(df: pd.DataFrame) -> pd.DataFrame:
+    """Return a copy of OHLCV data with Heikin-Ashi candle columns."""
+    required = {'open', 'high', 'low', 'close'}
+    missing = required - set(df.columns)
+    if missing:
+        raise ValueError(f"Heikin-Ashi calculation missing column(s): {', '.join(sorted(missing))}")
+
+    ha = df.copy()
+    ha['ha_close'] = (ha['open'] + ha['high'] + ha['low'] + ha['close']) / 4
+    ha_open = [float((ha['open'].iloc[0] + ha['close'].iloc[0]) / 2)]
+    for idx in range(1, len(ha)):
+        ha_open.append(float((ha_open[idx - 1] + ha['ha_close'].iloc[idx - 1]) / 2))
+    ha['ha_open'] = pd.Series(ha_open, index=ha.index)
+    ha['ha_high'] = ha[['high', 'ha_open', 'ha_close']].max(axis=1)
+    ha['ha_low'] = ha[['low', 'ha_open', 'ha_close']].min(axis=1)
+    ha['ha_body'] = (ha['ha_close'] - ha['ha_open']).abs()
+    ha['ha_direction'] = np.where(ha['ha_close'] >= ha['ha_open'], 1, -1)
+    return ha
+
+
 def volume_ratio(df: pd.DataFrame, period: int = 20) -> float:
     if len(df) < period or 'volume' not in df.columns:
         return 1.0
@@ -236,6 +256,35 @@ class TalonSniperStrategy:
         prev2 = ema13.iloc[-3] if len(ema13) >= 3 else ema13.iloc[0]
         return ('up', current) if current >= prev2 else ('down', current)
 
+    def calculate_heikin_ashi_signal(self, df: pd.DataFrame) -> Tuple[str, Dict]:
+        ha = heikin_ashi_candles(df)
+        if len(ha) < 3:
+            return 'neutral', {'reason': 'insufficient_heikin_ashi_data'}
+
+        current_dir = int(ha['ha_direction'].iloc[-1])
+        previous_dir = int(ha['ha_direction'].iloc[-2])
+        body = float(ha['ha_body'].iloc[-1])
+        avg_body = float(ha['ha_body'].rolling(window=5).mean().iloc[-1]) if len(ha) >= 5 else body
+        strong_body = body >= (avg_body * 0.8 if avg_body > 0 else 0)
+        upper_wick = float(ha['ha_high'].iloc[-1] - max(ha['ha_open'].iloc[-1], ha['ha_close'].iloc[-1]))
+        lower_wick = float(min(ha['ha_open'].iloc[-1], ha['ha_close'].iloc[-1]) - ha['ha_low'].iloc[-1])
+
+        bullish_reversal = current_dir == 1 and previous_dir == -1 and strong_body
+        bearish_reversal = current_dir == -1 and previous_dir == 1 and strong_body
+        trend = 'bullish' if current_dir == 1 else 'bearish'
+        return trend, {
+            'ha_open': float(ha['ha_open'].iloc[-1]),
+            'ha_high': float(ha['ha_high'].iloc[-1]),
+            'ha_low': float(ha['ha_low'].iloc[-1]),
+            'ha_close': float(ha['ha_close'].iloc[-1]),
+            'ha_body': body,
+            'upper_wick': upper_wick,
+            'lower_wick': lower_wick,
+            'trend': trend,
+            'bullish_reversal': bullish_reversal,
+            'bearish_reversal': bearish_reversal,
+        }
+
     def calculate_quality_score(self, df: pd.DataFrame, is_call: bool, is_put: bool, trend2: int, trend_filter: str, signal2_enter: bool = False) -> Tuple[float, Dict]:
         if not is_call and not is_put:
             return 0.0, {'reason': 'no_signal'}
@@ -302,6 +351,7 @@ class TalonSniperStrategy:
             is_call, is_put, signal1_details = self.calculate_signal1(df)
             trend2, signal2_details = self.calculate_signal2(df)
             trend_filter, ema13 = self.calculate_trend_filter(df)
+            ha_trend, ha_details = self.calculate_heikin_ashi_signal(df)
             atr_val = atr(df, 14).iloc[-1]
             signal = None
             confidence = 0.0
@@ -310,6 +360,14 @@ class TalonSniperStrategy:
             signal2_strength = self.config.signal_2_weight
             has_signal1 = is_call or is_put
             has_signal2_trend = signal2_details.get('enter_long') or signal2_details.get('enter_short')
+            if not has_signal1:
+                if ha_details.get('bullish_reversal') and ha_trend == 'bullish' and trend_filter == 'up':
+                    is_call = True
+                    signal1_details['heikin_ashi_confirmation'] = 'bullish_reversal'
+                elif ha_details.get('bearish_reversal') and ha_trend == 'bearish' and trend_filter == 'down':
+                    is_put = True
+                    signal1_details['heikin_ashi_confirmation'] = 'bearish_reversal'
+                has_signal1 = is_call or is_put
             if not has_signal1 and not has_signal2_trend:
                 return SignalResult(None, 0, 0, 0, 0, 0, 'none', {'reason': 'no_signal'}, quality_score=0.0)
             regime = market_regime(df)
@@ -369,7 +427,7 @@ class TalonSniperStrategy:
                 stop_loss = 0
                 take_profit_1 = 0
                 take_profit_2 = 0
-            details = {'signal1': {'call': is_call, 'put': is_put, **signal1_details}, 'signal2': signal2_details, 'trend_filter': trend_filter, 'ema13': ema13, 'atr': atr_val, 'current_price': current_price, 'signal_type': signal_type, 'quality_score': quality_score, 'quality_details': quality_details, 'adaptive_params': {'tema_dema_weight': self.config.tema_dema_weight, 'signal_2_weight': self.config.signal_2_weight, 'atr_sl_mult': sl_mult, 'atr_tp1_mult': tp1_mult, 'atr_tp2_mult': tp2_mult, 'min_confidence': self.config.min_confidence, 'min_quality_score': self.config.min_quality_score, 'volatility_filter': self.config.volatility_filter, 'require_signal_2_confirm': self.config.require_signal_2_confirm, 'rsi_oversold': self.config.rsi_oversold, 'rsi_overbought': self.config.rsi_overbought}}
+            details = {'signal1': {'call': is_call, 'put': is_put, **signal1_details}, 'signal2': signal2_details, 'trend_filter': trend_filter, 'heikin_ashi': ha_details, 'ema13': ema13, 'atr': atr_val, 'current_price': current_price, 'signal_type': signal_type, 'quality_score': quality_score, 'quality_details': quality_details, 'adaptive_params': {'tema_dema_weight': self.config.tema_dema_weight, 'signal_2_weight': self.config.signal_2_weight, 'atr_sl_mult': sl_mult, 'atr_tp1_mult': tp1_mult, 'atr_tp2_mult': tp2_mult, 'min_confidence': self.config.min_confidence, 'min_quality_score': self.config.min_quality_score, 'volatility_filter': self.config.volatility_filter, 'require_signal_2_confirm': self.config.require_signal_2_confirm, 'rsi_oversold': self.config.rsi_oversold, 'rsi_overbought': self.config.rsi_overbought}}
             return SignalResult(signal=signal, confidence=confidence, entry_price=round(current_price, 2), stop_loss=round(stop_loss, 2), take_profit_1=round(take_profit_1, 2), take_profit_2=round(take_profit_2, 2), signal_type=signal_type, details=details, quality_score=quality_score)
         except Exception as e:
             logger.error(f"Error generating Talon Sniper signal: {e}")
