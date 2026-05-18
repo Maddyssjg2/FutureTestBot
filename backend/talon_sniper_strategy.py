@@ -1,5 +1,5 @@
 """
-Talon Sniper v1 Trading Strategy
+Talon Sniper v2 Trading Strategy
 Based on TradingView Pine Script with Heikin Ashi candles
 
 Signal 1: TEMA/DEMA crossover with adaptive signal line
@@ -100,7 +100,7 @@ class StrategyConfig:
     rsi_overbought: int = 60
     require_macd_confirm: bool = False
     min_histogram_strength: float = 0.05
-    custom_strategy_name: str = 'Talon Sniper v1 Optimized 80% WR'
+    custom_strategy_name: str = 'Talon Sniper v2 Optimized 80% WR'
 
     @classmethod
     def from_adaptive_params(cls, params: Dict) -> "StrategyConfig":
@@ -122,7 +122,7 @@ class StrategyConfig:
             rsi_overbought=60,
             require_macd_confirm=False,
             min_histogram_strength=0.05,
-            custom_strategy_name=params.get('custom_strategy_name', 'Talon Sniper v1 Optimized 80% WR'),
+            custom_strategy_name=params.get('custom_strategy_name', 'Talon Sniper v2 Optimized 80% WR'),
         )
 
 
