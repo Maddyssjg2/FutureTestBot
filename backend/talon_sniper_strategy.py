@@ -1,6 +1,6 @@
 """
 Talon Sniper v2 Trading Strategy
-Based on TradingView Pine Script with Heikin Ashi candles
+Based on TradingView Pine Script
 
 Signal 1: TEMA/DEMA crossover with adaptive signal line
 Signal 2: ATR-based trend following with trailing stops
@@ -14,21 +14,6 @@ from typing import Dict, Optional, Tuple, List
 from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
-
-
-def heikin_ashi(df: pd.DataFrame) -> pd.DataFrame:
-    """Convert regular candles to Heikin Ashi candles"""
-    ha = pd.DataFrame(index=df.index)
-    ha['close'] = (df['open'] + df['high'] + df['low'] + df['close']) / 4
-    ha['open'] = df['open'].copy()
-    ha.loc[df.index[0], 'open'] = (df['open'].iloc[0] + df['close'].iloc[0]) / 2
-    for i in range(1, len(df)):
-        ha.loc[df.index[i], 'open'] = (ha['close'].iloc[i-1] + ha['open'].iloc[i-1]) / 2
-    ha['high'] = df[['high', 'open', 'close']].max(axis=1)
-    ha['low'] = df[['low', 'open', 'close']].min(axis=1)
-    if 'volume' in df.columns:
-        ha['volume'] = df['volume'].copy()
-    return ha
 
 
 def ema(series: pd.Series, period: int) -> pd.Series:
@@ -322,14 +307,11 @@ class TalonSniperStrategy:
             for col in ['open', 'high', 'low', 'close', 'volume']:
                 if col in df.columns:
                     df[col] = pd.to_numeric(df[col], errors='coerce')
-            ha_df = heikin_ashi(df)
-            if len(ha_df) < 50:
-                return SignalResult(None, 0, 0, 0, 0, 0, 'none', {'error': 'insufficient_data'}, quality_score=0.0)
-            current_price = float(ha_df['close'].iloc[-1])
-            is_call, is_put, signal1_details = self.calculate_signal1(ha_df)
-            trend2, signal2_details = self.calculate_signal2(ha_df)
-            trend_filter, ema13 = self.calculate_trend_filter(ha_df)
-            atr_val = atr(ha_df, 14).iloc[-1]
+            current_price = float(df['close'].iloc[-1])
+            is_call, is_put, signal1_details = self.calculate_signal1(df)
+            trend2, signal2_details = self.calculate_signal2(df)
+            trend_filter, ema13 = self.calculate_trend_filter(df)
+            atr_val = atr(df, 14).iloc[-1]
             signal = None
             confidence = 0.0
             signal_type = 'none'
@@ -339,11 +321,11 @@ class TalonSniperStrategy:
             has_signal2_trend = signal2_details.get('enter_long') or signal2_details.get('enter_short')
             if not has_signal1 and not has_signal2_trend:
                 return SignalResult(None, 0, 0, 0, 0, 0, 'none', {'reason': 'no_signal'}, quality_score=0.0)
-            regime = market_regime(ha_df)
+            regime = market_regime(df)
             if regime == 'choppy' and not has_signal2_trend:
                 return SignalResult(None, 0, 0, 0, 0, 0, 'filtered_choppy', {'market_regime': regime}, quality_score=0.0)
             signal2_enter = signal2_details.get('enter_long', False) or signal2_details.get('enter_short', False)
-            quality_score, quality_details = self.calculate_quality_score(ha_df, is_call, is_put, trend2, trend_filter, signal2_enter)
+            quality_score, quality_details = self.calculate_quality_score(df, is_call, is_put, trend2, trend_filter, signal2_enter)
             if quality_score < 55:
                 return SignalResult(None, 0, 0, 0, 0, 0, 'filtered_low_quality', {'quality_score': quality_score, 'reason': 'low_quality'}, quality_score=quality_score)
             rsi_val = quality_details.get('rsi', 50)
