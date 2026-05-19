@@ -9,11 +9,6 @@ Each pair uses its V2 optimized strategy:
 - SOLUSDT: RSI Mean Reversion (RSI 25)
 - XRPUSDT: RSI Mean Reversion (RSI 25)
 - BNBUSDT: RSI Mean Reversion (RSI 30)
-- DOGEUSDT: RSI Mean Reversion (RSI 35)
-- ADAUSDT: Bollinger Bands (period 20)
-- TRXUSDT: RSI Mean Reversion (RSI 30)
-- AVAXUSDT: RSI Mean Reversion (RSI 30)
-- DOTUSDT: Bollinger Bands (period 20)
 """
 
 import os
@@ -44,8 +39,7 @@ except ImportError:
 # ============================================================================
 
 PAIRS = [
-    "BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT",
-    "DOGEUSDT", "ADAUSDT", "TRXUSDT", "AVAXUSDT", "DOTUSDT"
+    "BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT"
 ]
 
 PAIR_STRATEGIES_V2 = {
@@ -54,11 +48,6 @@ PAIR_STRATEGIES_V2 = {
     "SOLUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 25, "adx_min": 0}},
     "XRPUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 25, "adx_min": 0}},
     "BNBUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 30, "adx_min": 0}},
-    "DOGEUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 35, "adx_min": 0}},
-    "ADAUSDT": {"strategy": "Bollinger", "params": {"period": 20}},
-    "TRXUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 30, "adx_min": 0}},
-    "AVAXUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 30, "adx_min": 0}},
-    "DOTUSDT": {"strategy": "Bollinger", "params": {"period": 20}},
 }
 
 TIMEFRAME = "1h"
@@ -297,62 +286,3 @@ def main():
         print(f"\n>>> {pair}")
         print(f"    Strategy: {PAIR_STRATEGIES_V2[pair]['strategy']}")
         print(f"    Params: {PAIR_STRATEGIES_V2[pair]['params']}")
-        
-        start_time = int((datetime.now() - timedelta(days=180)).timestamp() * 1000)
-        klines = downloader.get_klines(pair, TIMEFRAME, limit=2000, start_time=start_time)
-        
-        if not klines:
-            print(f"    Failed to download data")
-            continue
-        
-        df = pd.DataFrame(klines, columns=[
-            'timestamp', 'open', 'high', 'low', 'close', 'volume',
-            'close_time', 'quote_volume', 'trades', 'taker_buy_base', 'taker_buy_quote', 'ignore'
-        ])
-        for col in ['open', 'high', 'low', 'close', 'volume']:
-            df[col] = pd.to_numeric(df[col], errors='coerce')
-        df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-        df.set_index('timestamp', inplace=True)
-        
-        print(f"    {len(df)} candles loaded")
-        
-        result = train_model(pair, df)
-        results.append(result)
-        
-        if 'error' in result:
-            print(f"    Error: {result['error']}")
-        else:
-            print(f"    Accuracy: {result['accuracy']:.2%}")
-    
-    print("\n" + "=" * 70)
-    print("TRAINING SUMMARY")
-    print("=" * 70)
-    print(f"{'Symbol':<12} {'Strategy':<18} {'Accuracy':<12} {'Samples'}")
-    print("-" * 70)
-    
-    total_acc = 0
-    count = 0
-    
-    for r in results:
-        if 'error' not in r:
-            print(f"{r['symbol']:<12} {r['strategy']:<18} {r['accuracy']:<12.2%} {r['test_samples']}")
-            total_acc += r['accuracy']
-            count += 1
-    
-    if count > 0:
-        avg_acc = total_acc / count
-        print("-" * 70)
-        print(f"{'AVERAGE':<12} {'':<18} {avg_acc:<12.2%}")
-    
-    results_file = os.path.join(MODELS_DIR, 'pair_training_results_v2.json')
-    with open(results_file, 'w') as f:
-        json.dump(results, f, indent=2)
-    
-    print(f"\nResults saved to: {results_file}")
-    print(f"Models saved to: {MODELS_DIR}")
-    
-    return results
-
-
-if __name__ == '__main__':
-    main()
