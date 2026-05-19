@@ -9,11 +9,6 @@ Each pair uses its best strategy:
 - SOLUSDT: RSI Mean Reversion (RSI 25, ADX 25)
 - XRPUSDT: Stochastic (oversold 15)
 - BNBUSDT: Stochastic (oversold 15)
-- DOGEUSDT: Stochastic (oversold 20)
-- ADAUSDT: Stochastic (oversold 20)
-- TRXUSDT: RSI Mean Reversion (RSI 35, ADX 20)
-- AVAXUSDT: RSI Mean Reversion (RSI 25, ADX 20)
-- DOTUSDT: RSI Mean Reversion (RSI 30, ADX 25)
 """
 
 import os
@@ -44,8 +39,7 @@ except ImportError:
 # ============================================================================
 
 PAIRS = [
-    "BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT",
-    "DOGEUSDT", "ADAUSDT", "TRXUSDT", "AVAXUSDT", "DOTUSDT"
+    "BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT"
 ]
 
 # Optimized strategies per pair
@@ -55,11 +49,6 @@ PAIR_STRATEGIES = {
     "SOLUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 25, "adx_min": 25}},
     "XRPUSDT": {"strategy": "Stochastic", "params": {"oversold": 15}},
     "BNBUSDT": {"strategy": "Stochastic", "params": {"oversold": 15}},
-    "DOGEUSDT": {"strategy": "Stochastic", "params": {"oversold": 20}},
-    "ADAUSDT": {"strategy": "Stochastic", "params": {"oversold": 20}},
-    "TRXUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 35, "adx_min": 20}},
-    "AVAXUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 25, "adx_min": 20}},
-    "DOTUSDT": {"strategy": "RSI_MeanRev", "params": {"rsi_oversold": 30, "adx_min": 25}},
 }
 
 TIMEFRAME = "1h"
@@ -298,169 +287,3 @@ def train_model(pair: str, df: pd.DataFrame) -> Dict:
     rf.fit(X_train, y_train)
     rf_acc = (rf.predict(X_test) == y_test).mean()
     
-    # Train Gradient Boosting
-    gb = GradientBoostingClassifier(
-        n_estimators=100,
-        max_depth=5,
-        learning_rate=0.1,
-        random_state=42
-    )
-    gb.fit(X_train, y_train)
-    gb_acc = (gb.predict(X_test) == y_test).mean()
-    
-    # Use best model
-    if rf_acc >= gb_acc:
-        best_model = rf
-        best_name = 'RandomForest'
-        best_acc = rf_acc
-    else:
-        best_model = gb
-        best_name = 'GradientBoosting'
-        best_acc = gb_acc
-    
-    logger.info(f"  {best_name}: {best_acc:.2%} accuracy")
-    
-    # Save model
-    import pickle
-    os.makedirs(MODELS_DIR, exist_ok=True)
-    model_path = os.path.join(MODELS_DIR, f'model_{pair}.pkl')
-    with open(model_path, 'wb') as f:
-        pickle.dump(best_model, f)
-    
-    return {
-        'symbol': pair,
-        'strategy': PAIR_STRATEGIES[pair]['strategy'],
-        'params': PAIR_STRATEGIES[pair]['params'],
-        'model_type': best_name,
-        'accuracy': float(best_acc),
-        'train_samples': len(X_train),
-        'test_samples': len(X_test),
-        'features': X.shape[1],
-        'model_path': model_path
-    }
-
-
-def predict(pair: str, df: pd.DataFrame) -> Dict:
-    """Make prediction using trained model"""
-    if not HAS_SKLEARN:
-        return {'direction': 'NEUTRAL', 'confidence': 50}
-    
-    import pickle
-    
-    model_path = os.path.join(MODELS_DIR, f'model_{pair}.pkl')
-    if not os.path.exists(model_path):
-        return {'direction': 'NEUTRAL', 'confidence': 50}
-    
-    try:
-        with open(model_path, 'rb') as f:
-            model = pickle.load(f)
-        
-        X, _ = prepare_data(df.tail(LOOKBACK + 100), pair, LOOKBACK)
-        if len(X) == 0:
-            return {'direction': 'NEUTRAL', 'confidence': 50}
-        
-        prob = model.predict_proba(X[-1:])[0]
-        
-        if prob[1] > 0.55:
-            direction = 'LONG'
-            confidence = prob[1] * 100
-        elif prob[0] > 0.55:
-            direction = 'SHORT'
-            confidence = prob[0] * 100
-        else:
-            direction = 'NEUTRAL'
-            confidence = 50
-        
-        return {
-            'direction': direction,
-            'confidence': float(confidence),
-            'probability': float(max(prob))
-        }
-    except Exception as e:
-        logger.error(f"Prediction error: {e}")
-        return {'direction': 'NEUTRAL', 'confidence': 50}
-
-
-# ============================================================================
-# MAIN
-# ============================================================================
-
-def main():
-    print("=" * 70)
-    print("PAIR-SPECIFIC LSTM/ML TRAINING")
-    print("=" * 70)
-    print(f"Training with optimized strategy parameters for each pair")
-    print("=" * 70)
-    
-    os.makedirs(MODELS_DIR, exist_ok=True)
-    
-    downloader = DataDownloader()
-    results = []
-    
-    for pair in PAIRS:
-        print(f"\n>>> {pair}")
-        print(f"    Strategy: {PAIR_STRATEGIES[pair]['strategy']}")
-        print(f"    Params: {PAIR_STRATEGIES[pair]['params']}")
-        
-        # Download data
-        start_time = int((datetime.now() - timedelta(days=180)).timestamp() * 1000)
-        klines = downloader.get_klines(pair, TIMEFRAME, limit=2000, start_time=start_time)
-        
-        if not klines:
-            print(f"    Failed to download data")
-            continue
-        
-        df = pd.DataFrame(klines, columns=[
-            'timestamp', 'open', 'high', 'low', 'close', 'volume',
-            'close_time', 'quote_volume', 'trades', 'taker_buy_base', 'taker_buy_quote', 'ignore'
-        ])
-        for col in ['open', 'high', 'low', 'close', 'volume']:
-            df[col] = pd.to_numeric(df[col], errors='coerce')
-        df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-        df.set_index('timestamp', inplace=True)
-        
-        print(f"    {len(df)} candles loaded")
-        
-        # Train
-        result = train_model(pair, df)
-        results.append(result)
-        
-        if 'error' in result:
-            print(f"    Error: {result['error']}")
-        else:
-            print(f"    Accuracy: {result['accuracy']:.2%}")
-    
-    # Summary
-    print("\n" + "=" * 70)
-    print("TRAINING SUMMARY")
-    print("=" * 70)
-    print(f"{'Symbol':<12} {'Strategy':<18} {'Accuracy':<12} {'Samples'}")
-    print("-" * 70)
-    
-    total_acc = 0
-    count = 0
-    
-    for r in results:
-        if 'error' not in r:
-            print(f"{r['symbol']:<12} {r['strategy']:<18} {r['accuracy']:<12.2%} {r['test_samples']}")
-            total_acc += r['accuracy']
-            count += 1
-    
-    if count > 0:
-        avg_acc = total_acc / count
-        print("-" * 70)
-        print(f"{'AVERAGE':<12} {'':<18} {avg_acc:<12.2%}")
-    
-    # Save results
-    results_file = os.path.join(MODELS_DIR, 'pair_training_results.json')
-    with open(results_file, 'w') as f:
-        json.dump(results, f, indent=2)
-    
-    print(f"\nResults saved to: {results_file}")
-    print(f"Models saved to: {MODELS_DIR}")
-    
-    return results
-
-
-if __name__ == '__main__':
-    main()
