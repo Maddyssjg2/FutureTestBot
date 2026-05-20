@@ -44,8 +44,7 @@ except ImportError:
 # ============================================================================
 
 PAIRS = [
-    "BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT",
-    "DOGEUSDT", "ADAUSDT", "TRXUSDT", "AVAXUSDT", "DOTUSDT"
+    "BTCUSDT", "ETHUSDT", "SOLUSDT", "XRPUSDT", "BNBUSDT"
 ]
 
 # Optimized strategies per pair
